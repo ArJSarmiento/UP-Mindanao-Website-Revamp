@@ -1,0 +1,78 @@
+.navLinks a{
+    margin: 0px 15px;
+}
+
+.signupBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    max-width: 100px;
+    padding: 5px 10%;
+    
+    background: var(--color-2);
+    border-radius: 5px;
+
+    gap: 10px;
+}
+
+.tab, #tabs{
+    background: transparent !important;
+    border: none !important;
+}
+
+.tab li{
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    border: none !important;
+}
+
+#tabs .ui-state-active  a{
+    color: var(--color-2) !important;
+}
+
+.tab li a{
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(12px, 3vw, 16px);
+    line-height: 24px;
+
+    letter-spacing: 0.1px;
+    color: var(--main-color-text) !important;
+}
+
+#home{
+    padding: 1vw 5vw;
+}
+
+.info{
+    color: var(--main-color-text);
+}
+
+.info img{
+    float: right;
+}
+.info h1{
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 58px);
+    line-height: 80px;
+    /* identical to box height, or 138% */
+
+    letter-spacing: 0.2px;
+    margin :0;
+}
+
+.info img{
+    width: 30vw;
+    margin: 15px;
+}
+
+.info p{
+    color: var(--grey-text);
+    text-align: revert;
+    font-weight: 400;
+    font-size: clamp(12px, 3vw, i0px);
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
