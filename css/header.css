@@ -80,3 +80,21 @@ header h1 {
     font-size: clamp(18px, 3vw, 24px);
     line-height: 32px;
 }
+
+.navLinks a{
+    margin: 0px 15px;
+}
+
+.signupBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    max-width: 100px;
+    padding: 5px 10%;
+    
+    background: var(--color-2);
+    border-radius: 5px;
+
+    gap: 10px;
+}
