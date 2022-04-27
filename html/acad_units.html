@@ -12,6 +12,7 @@
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="../css/header.css" type="text/css" />
     <link rel="stylesheet" href="../css/tabs.css" />
+    <link rel="stylesheet" href="../css/acad_units_dropdown.css" />
 
     <!-- jquery scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -19,8 +20,9 @@
 
     <!-- custom scripts -->
     <script src="../js/script.js"></script>
+    <script src="../js/acad_units_dropdown.js"></script>
 
-    <title>Sign-up</title>
+    <title>Academic Units</title>
     <link rel="icon" href="../static/img/icon.png" type="image/png" />
 </head>
 
@@ -34,7 +36,14 @@
         <div class="navLinks">
             <a href="../html/index.html">Home</a>
 
-            <a href="">Academic Units</a>
+            <ul class="drop-down">
+                <a href="#" ; class="drop-down">Academic Units</a>
+                <ul class="sub">
+                    <li><a href="#hss">College of Humanities and Social Science</a></li>
+                    <li><a href="#csm">College of Science and Mathematics</a></li>
+                    <li><a href="#som">School of Management</a></li>
+                </ul>
+            </ul>
 
             <a href="">Academic Programs</a>
         </div>
@@ -45,7 +54,11 @@
         </div>
     </header>
     <div class="spacer layer1"></div>
-    <main></main>
+    <main>
+        <section id="home">
+
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+.sub {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub li {
+    float: up;
+    width: 160px;
+    height: 40px;
+    list-style: none;
+    list-style-type: none;
+    line-height: 1px;
+    text-align: center;
+    position: relative;
+}
+
+.sub li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: 100;
+}
+
+.sub li a:hover {
+    background-color: lightgray;
+}
