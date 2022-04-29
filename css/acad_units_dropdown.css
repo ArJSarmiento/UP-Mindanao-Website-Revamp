@@ -36,18 +36,36 @@
     background-color: lightgray;
 }
 
-.acad-u-spacer {
-    margin: 4% 0px 0px 0px;
+.gradient-background {
+    background-image: none;
+    width: 100vw;
+    height: 50vh;
+    z-index: -10;
+    position: fixed;
+    margin-top: -5%;
 }
+
+.acad_unit h1 {
+    justify-content: center;
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: clamp(18px, 3vw, 22px);
+text-transform: uppercase;}
 
 .hss {
     display: none;
 }
 
-.hss h1 {
-    justify-content: center;
-    display: flex;
-    font-family: monospace;
+.art-hss {
+    margin: 4% 0px 0px 0px;
+}
+
+.art-csm {
+    margin: 4% 0px 0px 0px;
+}
+
+.art-som {
+    margin: 4% 0px 0px 0px;
 }
 
 .csm {
@@ -61,12 +79,16 @@
 .college_logo {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(#0A3A3A, #fff);
-    margin: 0px -10% 0px -10%;
 }
 
 .college_logo img {
-    width: 300px;
-    height: 300px;
-    margin-top: -45px;
+    width: 25vh;
+    height: 25vh;
+}
+
+.acad-u-basic-inf {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #282828;
+    margin: 3%;
+    text-align: justify;
 }
