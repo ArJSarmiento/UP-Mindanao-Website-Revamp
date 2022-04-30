@@ -8,7 +8,6 @@ main {
 
 main .form {
     width: 90%;
-    margin: 50px 0px;
     padding: 20px;
     background: #fff;
     border-radius: 20px;
@@ -43,7 +42,8 @@ label {
 }
 
 input,
-select {
+select,
+.ui-spinner input {
     font-size: 16px;
     padding: 10px 5px;
     border: solid 2px rgba(0, 0, 0, 0.1);
@@ -79,6 +79,7 @@ button {
     height: 65px;
     width: 25%;
     min-width: 100px;
+    margin: 20px 0px;
 }
 
 button:hover,
@@ -87,6 +88,32 @@ button:focus {
     color: #fff;
 }
 
+.ui-spinner {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.ui-spinner input{
+    margin: 0px !important;
+}
+
+.gender input, .gender label{
+    max-width:200px !important;
+}
+
+.gender .ui-state-active, .gender .ui-state-active, .ui-button:active{
+    border: 1px solid var(--color-2) !important;
+    background: var(--color-2) !important;
+}
+.ui-icon-background{
+    border-color: var(--main-bg-color) !important;
+}
+
+.ui-visual-focus{
+    box-shadow: none !important;
+}
 
 @media only screen and (max-width: 700px) {
     .grid-div3,

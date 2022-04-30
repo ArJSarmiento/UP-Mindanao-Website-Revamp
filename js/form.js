@@ -3,7 +3,13 @@ $(document).ready(function () {
         $(".gender input").checkboxradio();
     });
     $(function () {
-        $("#datepicker").datepicker();
+        $(function () {
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '1920:2022'
+            });
+        });
         $("#anim").on("change", function () {
             $("#datepicker").datepicker("option", "showAnim", $(this).val());
         });
