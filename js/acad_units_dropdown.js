@@ -8,11 +8,9 @@ $(document).ready(function () {
         }
     );
 
-
     var path = window.location.pathname;
     var page = path.split("/").pop();
     console.log(page);
-
 
     $("[value='hss']").click(function () {
         if (page !== "acad_units.html") {
@@ -26,6 +24,7 @@ $(document).ready(function () {
         $(".som").css('display', 'none');
         $(".gradient-background").css('background-image', 'linear-gradient(#0A3A3A, #fff)')
     });
+
     $("[value='csm']").click(function () {
         if (page !== "acad_units.html") {
             window.location.href = "acad_units.html";
