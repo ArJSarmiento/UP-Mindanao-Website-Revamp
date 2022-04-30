@@ -1,23 +1,23 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(".drop-down").hover(
-        function() {
+        function () {
             $('>ul.sub:not(:animated)', this).slideDown(500);
         },
-        function() {
+        function () {
             $('>ul.sub', this).slideUp(300);
         }
     );
-});
 
-var path = window.location.pathname;
-var page = path.split("/").pop();
-console.log(page);
 
-$(document).ready(function() {
-    $("[value='hss']").click(function() {
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    console.log(page);
+
+
+    $("[value='hss']").click(function () {
         if (page !== "acad_units.html") {
             window.location.href = "acad_units.html";
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $(".hss").css('display', 'block');
             })
         }
@@ -26,7 +26,7 @@ $(document).ready(function() {
         $(".som").css('display', 'none');
         $(".gradient-background").css('background-image', 'linear-gradient(#0A3A3A, #fff)')
     });
-    $("[value='csm']").click(function() {
+    $("[value='csm']").click(function () {
         if (page !== "acad_units.html") {
             window.location.href = "acad_units.html";
             $(".csm").css('display', 'block');
@@ -36,7 +36,7 @@ $(document).ready(function() {
         $(".som").css('display', 'none');
         $(".gradient-background").css('background-image', 'linear-gradient(#7C0000, #fff)')
     });
-    $("[value='som']").click(function() {
+    $("[value='som']").click(function () {
         if (page !== "acad_units.html") {
             window.location.href = "acad_units.html";
             $(".som").css('display', 'block');
