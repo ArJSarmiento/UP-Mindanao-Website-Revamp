@@ -36,21 +36,20 @@
         <div class="navLinks">
             <a href="../html/index.html">Home</a>
 
-            <ul class="drop-down">
-                <a href="#" ; class="drop-down">Academic Units</a>
-                <ul class="sub">
-                    <li>
-                        <a value="hss">College of Humanities and Social Science</a>
-                    </li>
-                    <li>
-                        <a value="csm">College of Science and Mathematics</a>
-                    </li>
-                    <li>
-                        <a value="som">School of Management</a>
-                    </li>
-                </ul>
+            <div>
+                <div class="label-acad-u">Academic Units</div>
+                <div class="sub1">
+                    <select class="sub" id="dropdown">
+                        <option data-url="../html/chss.html"> College of Humanities and Social Science </option>
+                        <option data-url="../html/csm.html"> College of Science and Mathematics </option>
+                        <option data-url="../html/som.html"> School of Management </option>
+                    </select>
+                </div>
+            </div>
 
-                <a href="">Academic Programs</a>
+
+
+            <a href="">Academic Programs</a>
         </div>
 
         <div class="signupBtn">
@@ -59,20 +58,10 @@
         </div>
     </header>
     <div class="spacer layer1"></div>
-    <div class="gradient-background"></div>
+    <div class="gradient-background-csm"></div>
     <main>
         <section id="home">
             <div class="acad_unit">
-                <div class="hss" id="hss">
-                    <article class="art-hss">
-                        <span class="college_logo"><img src="../static/img/CHSS.png"></span>
-                        <h1>College of Humanities and Social Science</h1>
-                        <p class="acad-u-basic-inf">In 1997, UP Mindanao’s former College of Arts and Science (CAS) was broken down into other colleges. Thus, the College of Humanities and Social Science was formed. The College of Humanities and Social Sciences’ (CHSS) signature
-                            focus on experiential learning with the rigorous study of society, culture, politics, and ethics. It also equips students with the marketable skills necessary to excel in the job market or continue on to graduate and professional
-                            studies. This college serves every student, regardless of major, by supporting core curriculum components, creating opportunities for interactive education, and encouraging community engagement through co-curricular initiatives.
-                        </p>
-                    </article>
-                </div>
                 <div class="csm" id="csm">
                     <article class="art-csm">
                         <span class="college_logo"><img src="../static/img/CSM.png"></span>
@@ -80,15 +69,6 @@
                         <p class="acad-u-basic-inf">Along with the CHSS, the College of Science and Mathematics was also formed in 1997 after the College of Arts and Science (CAS) was split into different colleges. The College of Science and Mathematics pursues the development of
                             well-rounded persons through a culture of excellence in the science and for the establishment of a just and humane society. The College aims to be an internationally-recognized National Centers in Science and Mathematics by
                             producing quality graduates and outstanding research studies that lead in innovation and discovery.
-                        </p>
-                    </article>
-                </div>
-                <div class="som" id="som">
-                    <article class="art-som">
-                        <span class="college_logo"><img src="../static/img/SOM.png"></span>
-                        <h1>School of Management</h1>
-                        <p class="acad-u-basic-inf">The School of Management was created in June 1996. The School of Management is located in the most intense business ecosystems which allow them and their students access to management, agribusiness, and other leader that specialize
-                            in different areas of management. The School of Management provides a curriculum that is rigorous enough for students to prepare in the modern marketplace. This school brings together students from across the globe.
                         </p>
                     </article>
                 </div>

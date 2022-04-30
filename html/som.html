@@ -11,18 +11,18 @@
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="../css/header.css" type="text/css" />
+    <link rel="stylesheet" href="../css/tabs.css" />
     <link rel="stylesheet" href="../css/acad_units_dropdown.css" />
-    <link rel="stylesheet" href="../css/signup.css" type="text/css" />
 
     <!-- jquery scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
     <!-- custom scripts -->
+    <script src="../js/script.js"></script>
     <script src="../js/acad_units_dropdown.js"></script>
-    <script src="../js/form.js"></script>
 
-    <title>Sign-up</title>
+    <title>Academic Units</title>
     <link rel="icon" href="../static/img/icon.png" type="image/png" />
 </head>
 
@@ -47,6 +47,8 @@
                 </div>
             </div>
 
+
+
             <a href="">Academic Programs</a>
         </div>
 
@@ -56,43 +58,21 @@
         </div>
     </header>
     <div class="spacer layer1"></div>
+    <div class="gradient-background-som"></div>
     <main>
-        <div class="form">
-            <div class="passengerName">
-                <h2>Full Name</h2>
-                <div class="grid-div3">
-                    <label><input type="text" id="firstName" /> First Name</label>
-                    <label><input type="text" id="middleName" /> Middle Name</label>
-                    <label><input type="text" id="lastName" /> Last Name</label>
+        <section id="home">
+            <div class="acad_unit">
+                <div class="som" id="som">
+                    <article class="art-som">
+                        <span class="college_logo"><img src="../static/img/SOM.png"></span>
+                        <h1>School of Management</h1>
+                        <p class="acad-u-basic-inf">The School of Management was created in June 1996. The School of Management is located in the most intense business ecosystems which allow them and their students access to management, agribusiness, and other leader that specialize
+                            in different areas of management. The School of Management provides a curriculum that is rigorous enough for students to prepare in the modern marketplace. This school brings together students from across the globe.
+                        </p>
+                    </article>
                 </div>
             </div>
-
-            <div class="widget gender">
-                <h2>Gender</h2>
-
-                <label for="radio-1">Male</label>
-                <input type="radio" name="gender" id="radio-1" data-url="Male" />
-                <label for="radio-2">Female</label>
-                <input type="radio" name="gender" id="radio-2" data-url="Female" />
-            </div>
-
-            <div class="datepicker">
-                <h2>Date of Birth</h2>
-                <input type="text" id="datepicker" size="30" />
-            </div>
-
-            <div class="ui-widget province">
-                <h2>Province</h2>
-                <input id="provinces" />
-            </div>
-
-            <div class="yearLevel">
-                <h2>Year Level</h2>
-                <input id="yearLevel" name="value" />
-            </div>
-
-            <button id="submitBtn">Submit</button>
-        </div>
+        </section>
     </main>
 </body>
 
