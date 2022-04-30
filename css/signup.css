@@ -1,0 +1,123 @@
+main {
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .form {
+    width: 90%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.form h1, .form{
+    font-family: 'Montserrat';
+    color: var(--main-color-text);
+}
+
+.grid-div3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.grid-div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+label {
+    width: 100%;
+    margin: 15px 0px;
+}
+
+input,
+select,
+.ui-spinner input {
+    font-size: 16px;
+    padding: 10px 5px;
+    border: solid 2px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    color: var(--grey-text);
+    -webkit-appearance: none;
+}
+
+input:focus {
+    border: solid 2px var(--color-2);
+    outline: 0;
+    -webkit-box-shadow: 0 2px 6px -8px var(--color-2);
+    box-shadow: 0 2px 6px -8px var(--color-2);
+}
+
+button {
+    background-color: #fff;
+    width: 100px;
+    /* padding: -6px; */
+    color: var(--color-2);
+    border: 2px solid var(--color-2);
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    float: right;
+    height: 65px;
+    width: 25%;
+    min-width: 100px;
+    margin: 20px 0px;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--color-2);
+    color: #fff;
+}
+
+.ui-spinner {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.ui-spinner input{
+    margin: 0px !important;
+}
+
+.gender input, .gender label{
+    max-width:200px !important;
+}
+
+.gender .ui-state-active, .gender .ui-state-active, .ui-button:active{
+    border: 1px solid var(--color-2) !important;
+    background: var(--color-2) !important;
+}
+.ui-icon-background{
+    border-color: var(--main-bg-color) !important;
+}
+
+.ui-visual-focus{
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-div3,
+    .grid-div2 {
+        grid-template-columns: 1fr;
+    }
+}
