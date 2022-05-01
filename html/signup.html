@@ -38,20 +38,21 @@
       <div class="navLinks">
         <a href="../html/index.html">Home</a>
 
-        <ul class="drop-down">
-          <a href="#" class="drop-down">Academic Units</a>
-          <ul class="sub">
-            <li>
-              <a value="hss">College of Humanities and Social Science</a>
-            </li>
-            <li>
-              <a value="csm">College of Science and Mathematics</a>
-            </li>
-            <li>
-              <a value="som">School of Management</a>
-            </li>
-          </ul>
-        </ul>
+        <div>
+          <div class="label-acad-u">Academic Units</div>
+          <div class="sub1">
+            <select class="sub" id="dropdown">
+              <option selected>Select a Academic Unit</option>
+              <option data-url="../html/chss.html">
+                College of Humanities and Social Science
+              </option>
+              <option data-url="../html/csm.html">
+                College of Science and Mathematics
+              </option>
+              <option data-url="../html/som.html">School of Management</option>
+            </select>
+          </div>
+        </div>
 
         <a href="">Academic Programs</a>
       </div>
@@ -77,9 +78,9 @@
           <h2>Gender</h2>
 
           <label for="radio-1">Male</label>
-          <input type="radio" name="gender" id="radio-1" value="Male" />
+          <input type="radio" name="gender" id="radio-1" data-url="Male" />
           <label for="radio-2">Female</label>
-          <input type="radio" name="gender" id="radio-2" value="Female" />
+          <input type="radio" name="gender" id="radio-2" data-url="Female" />
         </div>
 
         <div class="datepicker">

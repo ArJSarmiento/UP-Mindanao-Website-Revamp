@@ -1,7 +1,11 @@
+//waits for html to load before running the script
 $(document).ready(function () {
+    //checkbox radio initialization
     $(function () {
         $(".gender input").checkboxradio();
     });
+
+    //datepicker initialization
     $(function () {
         $(function () {
             $("#datepicker").datepicker({
@@ -14,7 +18,10 @@ $(document).ready(function () {
             $("#datepicker").datepicker("option", "showAnim", $(this).val());
         });
     });
+
+    //autocomplete initialization
     $(function () {
+        //list of all the provinces in Mindanao
         let availableTags = [
             "Agusan del Norte",
             "Agusan del Sur",
@@ -48,11 +55,13 @@ $(document).ready(function () {
             source: availableTags
         });
     });
-    let spinner = $("#yearLevel").spinner();
 
+    //spinner initialization
+    $("#yearLevel").spinner();
 
+    //function for file write and download
     function download(filename, text) {
-        var element = document.createElement('a');
+        let element = document.createElement('a');
         element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
         element.setAttribute('download', filename);
 
@@ -64,9 +73,8 @@ $(document).ready(function () {
         document.body.removeChild(element);
     }
 
-    // Start file download.
-
     $("#submitBtn").on("click", function () {
+        //get the values of the form
         let firstName = $("#firstName").val();
         let middleName = $("#middleName").val();
         let lastName = $("#lastName").val();
@@ -74,6 +82,8 @@ $(document).ready(function () {
         let datepicker = $('#datepicker').val();
         let provinces = $('#provinces').val();
         let yearLevel = $("#yearLevel").val();
+
+        // Start file download.
         download("signUp.txt",
             "Sign-up Summary" + "\n" +
             "First Name: " + firstName + "\n" +
