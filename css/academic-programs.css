@@ -1,0 +1,15 @@
+#accordion {
+    width: 75%;
+    margin: 50px auto;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p, h3, h4, h5 {
+    font-family: 'Montserrat';    
+}
