@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- jquery stylesheet -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="../css/header.css" type="text/css" />
@@ -24,56 +26,67 @@
 
     <title>Academic Units</title>
     <link rel="icon" href="../static/img/icon.png" type="image/png" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="titleCont">
-            <img src="../static/img/logo.png" alt="up min logo" />
-            <h1>UP Mindanao</h1>
+      <div class="titleCont">
+        <img src="../static/img/logo.png" alt="up min logo" />
+        <h1>UP Mindanao</h1>
+      </div>
+
+      <div class="navLinks">
+        <a href="../html/index.html">Home</a>
+
+        <div>
+          <div class="label-acad-u">Academic Units</div>
+          <div class="sub1">
+            <select class="sub" id="dropdown">
+              <option selected>Select a Academic Unit</option>
+              <option data-url="../html/chss.html">
+                College of Humanities and Social Science
+              </option>
+              <option data-url="../html/csm.html">
+                College of Science and Mathematics
+              </option>
+              <option data-url="../html/som.html">School of Management</option>
+            </select>
+          </div>
         </div>
 
-        <div class="navLinks">
-            <a href="../html/index.html">Home</a>
+        <a href="../html/academic-programs.html">Academic Programs</a>
+      </div>
 
-            <div>
-                <div class="label-acad-u">Academic Units</div>
-                <div class="sub1">
-                    <select class="sub" id="dropdown">
-                        <option selected> Select a Academic Unit</option>
-                        <option data-url="../html/chss.html"> College of Humanities and Social Science </option>
-                        <option data-url="../html/csm.html"> College of Science and Mathematics </option>
-                        <option data-url="../html/som.html"> School of Management </option>
-                    </select>
-                </div>
-            </div>
-
-
-            <a href="">Academic Programs</a>
-        </div>
-
-        <div class="signupBtn">
-            <a href="../html/signup.html">Sign-up</a>
-            <span><img src="../static/svg/arrow.svg" /></span>
-        </div>
+      <div class="signupBtn">
+        <a href="../html/signup.html">Sign-up</a>
+        <span><img src="../static/svg/arrow.svg" /></span>
+      </div>
     </header>
     <div class="spacer layer1"></div>
     <div class="gradient-background-som"></div>
     <main>
-        <section id="home">
-            <div class="acad_unit">
-                <div class="som" id="som">
-                    <article class="art-som">
-                        <span class="college_logo"><img src="../static/img/SOM.png"></span>
-                        <h1>School of Management</h1>
-                        <p class="acad-u-basic-inf">The School of Management was created in June 1996. The School of Management is located in the most intense business ecosystems which allow them and their students access to management, agribusiness, and other leader that specialize
-                            in different areas of management. The School of Management provides a curriculum that is rigorous enough for students to prepare in the modern marketplace. This school brings together students from across the globe.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <section id="home">
+        <div class="acad_unit">
+          <div class="som" id="som">
+            <article class="art-som">
+              <span class="college_logo"
+                ><img src="../static/img/SOM.png"
+              /></span>
+              <h1>School of Management</h1>
+              <p class="acad-u-basic-inf">
+                The School of Management was created in June 1996. The School of
+                Management is located in the most intense business ecosystems
+                which allow them and their students access to management,
+                agribusiness, and other leader that specialize in different
+                areas of management. The School of Management provides a
+                curriculum that is rigorous enough for students to prepare in
+                the modern marketplace. This school brings together students
+                from across the globe.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

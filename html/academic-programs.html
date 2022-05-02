@@ -11,7 +11,7 @@
 
   <!-- custom stylesheets -->
   <link rel="stylesheet" href="../css/header.css" type="text/css" />
-  <!-- <link rel="stylesheet" href="../css/tabs.css" /> -->
+  <link rel="stylesheet" href="../css/acad_units_dropdown.css" />
   <link rel="stylesheet" href="../css/academic-programs.css" />
 
   <!-- jquery scripts -->
@@ -20,7 +20,8 @@
 
   <!-- custom scripts -->
   <script src="../js/academic-programs.js"></script>
-    
+  <script src="../js/acad_units_dropdown.js"></script>
+
   <title>Academic Programs</title>
   <link rel="icon" href="../static/img/icon.png" type="image/png" />
 </head>
@@ -35,10 +36,23 @@
     <div class="navLinks">
       <a href="../html/index.html">Home</a>
 
-      <a href="">Academic Units</a>
+      <div>
+        <div class="label-acad-u">Academic Units</div>
+        <div class="sub1">
+          <select class="sub" id="dropdown">
+            <option selected>Select a Academic Unit</option>
+            <option data-url="../html/chss.html">
+              College of Humanities and Social Science
+            </option>
+            <option data-url="../html/csm.html">
+              College of Science and Mathematics
+            </option>
+            <option data-url="../html/som.html">School of Management</option>
+          </select>
+        </div>
+      </div>
 
-      <a href="">Academic Programs</a>
-      
+      <a href="../html/academic-programs.html">Academic Programs</a>
     </div>
 
     <div class="signupBtn">
