@@ -1,5 +1,8 @@
 /* CSS file for each academic unit page */
 
+
+/* styles for academic units and select menu */
+
 .acad_unit>* {
     font-family: 'Montserrat' !important;
     color: var(--grey-text) !important;
