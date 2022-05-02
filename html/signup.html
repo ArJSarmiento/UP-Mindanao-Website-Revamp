@@ -13,14 +13,16 @@
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="../css/header.css" type="text/css" />
-    <link rel="stylesheet" href="../css/tabs.css" />
+    <link rel="stylesheet" href="../css/acad_units_dropdown.css" />
+    <link rel="stylesheet" href="../css/signup.css" type="text/css" />
 
     <!-- jquery scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
     <!-- custom scripts -->
-    <script src="../js/script.js"></script>
+    <script src="../js/acad_units_dropdown.js"></script>
+    <script src="../js/form.js"></script>
 
     <title>Sign-up</title>
     <link rel="icon" href="../static/img/icon.png" type="image/png" />
@@ -36,7 +38,21 @@
       <div class="navLinks">
         <a href="../html/index.html">Home</a>
 
-        <a href="">Academic Units</a>
+        <div>
+          <div class="label-acad-u">Academic Units</div>
+          <div class="sub1">
+            <select class="sub" id="dropdown">
+              <option selected>Select a Academic Unit</option>
+              <option data-url="../html/chss.html">
+                College of Humanities and Social Science
+              </option>
+              <option data-url="../html/csm.html">
+                College of Science and Mathematics
+              </option>
+              <option data-url="../html/som.html">School of Management</option>
+            </select>
+          </div>
+        </div>
 
         <a href="">Academic Programs</a>
       </div>
@@ -47,6 +63,43 @@
       </div>
     </header>
     <div class="spacer layer1"></div>
-    <main></main>
+    <main>
+      <div class="form">
+        <div class="passengerName">
+          <h2>Full Name</h2>
+          <div class="grid-div3">
+            <label><input type="text" id="firstName" /> First Name</label>
+            <label><input type="text" id="middleName" /> Middle Name</label>
+            <label><input type="text" id="lastName" /> Last Name</label>
+          </div>
+        </div>
+
+        <div class="widget gender">
+          <h2>Gender</h2>
+
+          <label for="radio-1">Male</label>
+          <input type="radio" name="gender" id="radio-1" data-url="Male" />
+          <label for="radio-2">Female</label>
+          <input type="radio" name="gender" id="radio-2" data-url="Female" />
+        </div>
+
+        <div class="datepicker">
+          <h2>Date of Birth</h2>
+          <input type="text" id="datepicker" size="30" />
+        </div>
+
+        <div class="ui-widget province">
+          <h2>Province</h2>
+          <input id="provinces" />
+        </div>
+
+        <div class="yearLevel">
+          <h2>Year Level</h2>
+          <input id="yearLevel" name="value" />
+        </div>
+
+        <button id="submitBtn">Submit</button>
+      </div>
+    </main>
   </body>
 </html>

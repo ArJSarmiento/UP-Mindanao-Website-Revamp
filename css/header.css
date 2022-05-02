@@ -2,7 +2,7 @@
     --main-bg-color: rgb(121, 35, 36, 95%);
     --color-2: #FF6551;
     --main-color-text: rgb(142, 23, 26) ;
-    --grey-text: #635B5B;
+    --grey-text: #909090;
 }
 
 html,
@@ -79,4 +79,22 @@ header h1 {
     font-weight: 700;
     font-size: clamp(18px, 3vw, 24px);
     line-height: 32px;
+}
+
+.navLinks a{
+    margin: 0px 15px;
+}
+
+.signupBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    max-width: 100px;
+    padding: 5px 10%;
+    
+    background: var(--color-2);
+    border-radius: 5px;
+
+    gap: 10px;
 }
