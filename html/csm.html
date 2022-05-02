@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- jquery stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
-    />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="../css/header.css" type="text/css" />
@@ -26,68 +24,61 @@
 
     <title>College of Science and Mathematics</title>
     <link rel="icon" href="../static/img/icon.png" type="image/png" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="titleCont">
-        <img src="../static/img/logo.png" alt="up min logo" />
-        <h1>UP Mindanao</h1>
-      </div>
-
-      <div class="navLinks">
-        <a href="../html/index.html">Home</a>
-
-        <div>
-          <div class="label-acad-u">Academic Units</div>
-          <div class="sub1">
-            <select class="sub" id="dropdown">
-              <option selected>Select a Academic Unit</option>
-              <option data-url="../html/chss.html">
-                College of Humanities and Social Science
-              </option>
-              <option data-url="../html/csm.html">
-                College of Science and Mathematics
-              </option>
-              <option data-url="../html/som.html">School of Management</option>
-            </select>
-          </div>
+        <div class="titleCont">
+            <img src="../static/img/logo.png" alt="up min logo" />
+            <h1>UP Mindanao</h1>
         </div>
 
-        <a href="../html/academic-programs.html">Academic Programs</a>
-      </div>
+        <div class="navLinks">
+            <a href="../html/index.html">Home</a>
 
-      <div class="signupBtn">
-        <a href="../html/signup.html">Sign-up</a>
-        <span><img src="../static/svg/arrow.svg" /></span>
-      </div>
+            <!-- div for dropdown implementation -->
+            <div>
+                <div class="label-acad-u">Academic Units</div>
+                <div class="sub1">
+                    <select class="sub" id="dropdown">
+                        <option selected>Select a Academic Unit</option>
+                        <!-- Links each option to respective academic unit -->
+                        <option data-url="../html/chss.html">College of Humanities and Social Science</option>
+                        <option data-url="../html/csm.html">College of Science and Mathematics</option>
+                        <option data-url="../html/som.html">School of Management</option>
+                    </select>
+                </div>
+            </div>
+            <!-- =========================================== -->
+
+            <a href="../html/academic-programs.html">Academic Programs</a>
+        </div>
+
+        <div class="signupBtn">
+            <a href="../html/signup.html">Sign-up</a>
+            <span><img src="../static/svg/arrow.svg" /></span>
+        </div>
     </header>
     <div class="spacer layer1"></div>
     <div class="gradient-background-csm"></div>
     <main>
-      <section id="home">
-        <div class="acad_unit">
-          <div class="csm" id="csm">
-            <article class="art-csm">
-              <span class="college_logo"
-                ><img src="../static/img/CSM.png"
-              /></span>
-              <h1>College of Science and Mathematics</h1>
-              <p class="acad-u-basic-inf">
-                Along with the CHSS, the College of Science and Mathematics was
-                also formed in 1997 after the College of Arts and Science (CAS)
-                was split into different colleges. The College of Science and
-                Mathematics pursues the development of well-rounded persons
-                through a culture of excellence in the science and for the
-                establishment of a just and humane society. The College aims to
-                be an internationally-recognized National Centers in Science and
-                Mathematics by producing quality graduates and outstanding
-                research studies that lead in innovation and discovery.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+        <!-- Content/Information for academic unit -->
+        <section id="home">
+            <div class="acad_unit">
+                <div class="csm" id="csm">
+                    <article class="art-csm">
+                        <span class="college_logo"><img src="../static/img/CSM.png"/></span>
+                        <h1>College of Science and Mathematics</h1>
+                        <p class="acad-u-basic-inf">
+                            Along with the CHSS, the College of Science and Mathematics was also formed in 1997 after the College of Arts and Science (CAS) was split into different colleges. The College of Science and Mathematics pursues the development of well-rounded persons through
+                            a culture of excellence in the science and for the establishment of a just and humane society. The College aims to be an internationally-recognized National Centers in Science and Mathematics by producing quality graduates
+                            and outstanding research studies that lead in innovation and discovery.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
+</body>
+
 </html>
