@@ -1,0 +1,100 @@
+<!-- HTML File for academic unit College of Humanities and Social Science (CHSS) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jquery stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="./css/header.css" type="text/css" />
+    <link rel="stylesheet" href="./css/tabs.css" />
+    <link rel="stylesheet" href="./css/acad_units_dropdown.css" />
+
+    <!-- jquery scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <!-- custom scripts -->
+    <script src="./js/acad_units_dropdown.js"></script>
+
+    <title>College of Humanities and Social Science</title>
+    <link rel="icon" href="./static/img/icon.png" type="image/png" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <div class="titleCont">
+        <img src="./static/img/logo.png" alt="up min logo" />
+        <h1>UP Mindanao</h1>
+      </div>
+
+      <div class="navLinks">
+        <a href="./index.html">Home</a>
+
+        <!-- div for dropdown implementation -->
+        <div>
+          <div class="label-acad-u">Academic Units</div>
+          <div class="sub1">
+            <select class="sub" id="dropdown">
+              <option selected>Select an Academic Unit</option>
+              <!-- Links each option to respective academic unit -->
+              <option data-url="./chss.html">
+                College of Humanities and Social Science
+              </option>
+              <option data-url="./csm.html">
+                College of Science and Mathematics
+              </option>
+              <option data-url="./som.html">School of Management</option>
+            </select>
+          </div>
+        </div>
+        <!-- =========================================== -->
+        <a href="./academic-programs.html">Academic Programs</a>
+      </div>
+
+      <div class="signupBtn">
+        <a href="./signup.html">Sign-up</a>
+        <span><img src="./static/svg/arrow.svg" /></span>
+      </div>
+    </header>
+    <div class="spacer layer1"></div>
+    <div class="gradient-background-chss"></div>
+    <main>
+      <!-- Content/Information for academic unit -->
+      <section id="home">
+        <div class="acad_unit">
+          <div class="hss" id="hss">
+            <article class="art-hss">
+              <span class="college_logo"
+                ><img src="./static/img/CHSS.png"
+              /></span>
+              <h1>College of Humanities and Social Science</h1>
+              <p class="acad-u-basic-inf">
+                In 1997, UP Mindanao’s former College of Arts and Science (CAS)
+                was broken down into other colleges. Thus, the College of
+                Humanities and Social Science was formed. The College of
+                Humanities and Social Sciences’ (CHSS) signature focus on
+                experiential learning with the rigorous study of society,
+                culture, politics, and ethics. It also equips students with the
+                marketable skills necessary to excel in the job market or
+                continue on to graduate and professional studies. This college
+                serves every student, regardless of major, by supporting core
+                curriculum components, creating opportunities for interactive
+                education, and encouraging community engagement through
+                co-curricular initiatives.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
