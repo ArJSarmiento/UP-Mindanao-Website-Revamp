@@ -1,927 +1,1146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
 
-  <!-- jquery stylesheet -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="../css/header.css" type="text/css" />
+    <link rel="stylesheet" href="../css/acad_units_dropdown.css" />
+    <link rel="stylesheet" href="../css/academic-programs.css" />
 
-  <!-- custom stylesheets -->
-  <link rel="stylesheet" href="../css/header.css" type="text/css" />
-  <link rel="stylesheet" href="../css/acad_units_dropdown.css" />
-  <link rel="stylesheet" href="../css/academic-programs.css" />
+    <!-- jquery scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-  <!-- jquery scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <!-- custom scripts -->
+    <script src="../js/academic-programs.js"></script>
+    <script src="../js/acad_units_dropdown.js"></script>
 
-  <!-- custom scripts -->
-  <script src="../js/academic-programs.js"></script>
-  <script src="../js/acad_units_dropdown.js"></script>
+    <title>Academic Programs</title>
+    <link rel="icon" href="../static/img/icon.png" type="image/png" />
+  </head>
 
-  <title>Academic Programs</title>
-  <link rel="icon" href="../static/img/icon.png" type="image/png" />
-</head>
-
-<body>
-  <header>
-    <div class="titleCont">
-      <img src="../static/img/logo.png" alt="up min logo" />
-      <h1>UP Mindanao</h1>
-    </div>
-
-    <div class="navLinks">
-      <a href="../html/index.html">Home</a>
-
-      <div>
-        <div class="label-acad-u">Academic Units</div>
-        <div class="sub1">
-          <select class="sub" id="dropdown">
-            <option selected>Select a Academic Unit</option>
-            <option data-url="../html/chss.html">
-              College of Humanities and Social Science
-            </option>
-            <option data-url="../html/csm.html">
-              College of Science and Mathematics
-            </option>
-            <option data-url="../html/som.html">School of Management</option>
-          </select>
-        </div>
+  <body>
+    <header>
+      <div class="titleCont">
+        <img src="../static/img/logo.png" alt="up min logo" />
+        <h1>UP Mindanao</h1>
       </div>
 
-      <a href="../html/academic-programs.html">Academic Programs</a>
-    </div>
+      <div class="navLinks">
+        <a href="../html/index.html">Home</a>
 
-    <div class="signupBtn">
-      <a href="../html/signup.html">Sign-up</a>
-      <span><img src="../static/svg/arrow.svg" /></span>
-    </div>
-  </header>
-  <div class="spacer layer1"></div>
-  <main>
-    <section id="home">
-      <div id="tabs">
-        <div id="fragment-1">
-          <article class="info history">
-            <div>
-            <h2>Degree Programs</h2>
-                <div id="accordion">
-                    <h3>BS ANTHROPOLOGY</h3>
-                    <div>     
-                        <p>PROGRAM PROFILE</p>
-                        <p>Anthropology is a social science that explores society and humanity from a bio-cultural and 
-                        cross-cultural approach. The program is designed to provide students with training, field 
-                        experience, and hands-on exposure to methods of anthropological research and visual documentation 
-                        of different cultural life ways, both local and globally.<br><br>
-                        Career opportunities for BS  Anthropology graduates include research analyst, educator, development worker, 
-                        advertising consultant, human resource officer, policy researcher, evaluator, social auditor, cultural broker, social advocate, 
-                        and museum researcher, and other related fields.</p>
-                        COURSE PROSPECTUS<br><br>
-                        Subjects<br><br>
-                        GENERAL
-                        <ul>
-                            <li>General Anthropology</li>
-                            <li>Introduction to Archaeology</li>
-                            <li>Peoples and Cultures of Mindanao</li>
-                            <li>Ecological Anthropology</li>
-                            <li>Introduction to Economic Anthropology</li>
-                            <li>Political and Legal Anthropology</li>
-                            <li>Introduction to Folklore</li>
-                            <li>Language and Culture</li>
-                            <li>Culture Change & Applied Anthropology</li>
-                            <li>Introduction to Social Anthropology</li>
-                            <li>Sex and Culture</li>
-                            <li>Theory in Anthropology I and II</li>
-                            <li>Seminar in Ethnographic Writing</li>
-                            <li>Visual Anthropology</li>
-                            <li>Quantitative Methods in Social Research</li>
-                            <li>Qualitative Methods in Social Research</li>
-                        </ul><br>
-                        <p>LINGUISTIC COURSES</p>
-                        <ul>
-                            <li>Introduction to Linguistics I and II</li>
-                        </ul><br>
-                        <p>LEGISLATED COURSES</p>
-                        <ul>
-                            <li>Introduction to Linguistics I and II</li>
-                        </ul><br>
-                        <p>REVISED GENERAL EDUCATION COURSES</p>
-                        <ul>
-                            <li>AH 1, Dimensions of Identity: Understanding Ourselves Through Reading and Writing</li>
-                            <li>AH 2, Exploring Ideas Through Academic Writing</li>
-                            <li>AH 3, Effective Speech Communication</li>
-                            <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
-                            <li>AH 5, Art and Society</li>
-                            <li>AH 6, Visual Communication and Society</li>
-                            <li>AH 7, Significant Themes in Literature and Films</li>
-                            <li>SSP 1, Philippine History</li>
-                            <li>SSP 2, Asia & The World</li>
-                            <li>SSP 3, Foundations of Behavioral Science</li>
-                            <li>SSP 4, Social, Economic & Political Thought</li>
-                            <li>SSP 5, Philosophical Analysis</li>
-                            <li>SSP 6, Wika at Pagka-Pilipino</li>
-                            <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
-                            <li>MST 1, Foundation of Natural Sciences I</li>
-                            <li>MST 2, Foundation of Natural Sciences II</li>
-                            <li>MST 3, Mathematics for General Education</li>
-                            <li>MST 4, Science, Technology and Society</li>
-                            <li>MST 5, Biotechnology and Society</li>
-                            <li>MST 6, Biodiversity Challenge</li>
-                        </ul>                      
-                    </div>
-                    <h3>BS AGRIBUSINESS ECONOMICS</h3>
-                    <div>
-                        <p>PROGRAM PROFILE</p>
-                        <p>
-                        The program is based primarily on the needs of Mindanao, particularly in pursuing the island’s role as 
-                        the country’s food basket amidst the challenges of globalization and international competitiveness.<br><br>
-                        The program is unique as no other university in the region offers a degree in economics that is geared 
-                        towards applying economic theories in agribusiness. The program will develop graduates with strong theoretical 
-                        and mathematical foundations necessary for the application of concepts in real problems of the region. 
-                        and museum researcher, and other related fields.    
-                        </p>
-                        <p>COURSE PROSPECTUS</p>
-                        <ol type="A">
-                        <li>Revised General Education (GE) courses</li>
-                        <ul>
-                        <p>UP Mindanao Required (18 units)</p>	 
-                        <li>Kasaysayan ng Pilipinas</li>	 
-                        <li>Critical Perspectives in the Arts</li>	 
-                        <li>Ethics and Moral Reasoning in Everyday Life</li>	 
-                        <li>Science, Technology and Society	</li>
-                        <li>Mathematics, Culture and Society</li>
-                        <li>Mindanao Studies</li>
-                        <p>BS ABE Required (12 units)</p>	 
-                        <li>Critical Perspectives in Communication</li>	 
-                        <li>Self and Society	 </li>
-                        <li>Living Systems: Concepts and Dynamics</li>	 
-                        <li>Probing the Physical World</li>
-                        </ul>
-                        <li>Foundation Courses</li>
-                        <ul>
-                        <li>Bio 10 Introduction to Biology	 </li>
-                        <li>CrSc 10 Introduction to Crop Science</li>	 
-                        <li>AnSci 10 Introduction to Animal Science</li>	 
-                        <li>Stat 1 Elementary Statistics</li>	 
-                        <li>AMAT 131 Statistical Methods and Experimental Design</li>	 
-                        <li>Math 17 Algebra & Trigonometry</li>	 
-                        <li>Math 26 Analytic Geometry & Calculus I</li>
-                        </ul>
-                        <li>Core Courses</li>
-                        <ul>
-                            <li>ECON 11 General Economics</li>
-                            <li>ECON 101 Intermediate Macroeconomic Theory</li>
-                            <li>ECON102 Intermediate Microeconomic Theory I</li>
-                            <li>ECON104 Intermediate Microeconomic Theory II</li>
-                            <li>ECON 130 Elements of Mathematical Economics</li>
-                            <li>ECON 137 Introduction to Quantitative Economics</li>
-                            <li>ECON 138 Selected Topics in Econometrics</li>
-                            <li>MGT 101 Concepts & Dynamics of Management</li>
-                            <li>MGT 111 Principles of Accounting</li>
-                            <li>MGT 131 Introduction to Human Relation & Behavior in Organizations</li>	 
-                            <li>MGT 153 Introduction to Financial Management</li>
-                            <li>MGT 155 Introduction to Marketing Management</li>
-                            <li>ABE 102 Introduction to Agribusiness Economics</li>
-                            <li>ABE 134 Applied Linear Programming for Economists</li>	 
-                            <li>ABE 200 Undergraduate Thesis</li>                           
-                        </ul>
-                        <li>Specialized Course</li>  
-                        <ul>
-                            <li>ABE 151 Agribusiness Systems</li>
-                            <li>ABE 139 Qualitative Methods in Agribusiness Research</li>
-                            <li>ABE 152 Agricultural Cooperative and Self-Managed Business Enterprise</li>	 
-                            <li>ABE 154 International Agricultural Trade</li>	 
-                            <li>ABE 156 Agricultural Production Management for Agribusiness Enterprise</li>	 
-                            <li>ABE 157 Agricultural Price and Policy Analysis</li>
-                            <li>ABE 158 Industrial Organization of Agricultural Markets</li>
-                            <li>ABE 159 Macroeconomics of Agricultural Development</li>
-                            <li>ABE 196 Research Writing in Agribusiness Economics</li>
-                            <li>ABE 198 Practicum</li>
-                            <li>ABE 199 Undergraduate Seminar in Agribusiness Economics</li>             
-                        </ul>
-                        <li>Qualified Electives</li> 
-                        <ul>
-                            <p>(Any three of the following courses as qualified elective)</p>	 
-                            <li>ECON 142 Economic Valuation for Environmental and Natural Resource Economics</li>	 
-                            <li>ECON 171 Natural Resource and Environmental Economics</li>
-                            <li>ECON 192 Environmental Policy Analysis</li>
-                            <li>ECON 190 Special Problem</li>
-                            <li>ECON 191 Special Topic</li>
-                            <li>ABE 138 Economics of Gender and Agribusiness Development</li>
-                            <li>ABE 150 Agricultural Policy & Management Communication	 </li>
-                            <li>ABE 190 Special Problem</li>
-                            <li>ABE 191 Introduction to Agribusiness Development and Planning</li>
-                            <li>ABE 197 Sustainable Agriculture</li>
-                            <li>MGT 137 Introduction to Production & Operations Management</li>
-                            <li>MGT 141 Introduction to Enterprise Development</li>
-                            <li>MGT 142 Enterprise Management</li>
-                            <li>MGT191 Supply Chain Management</li>
-                        </ul>
-                        <li>Legislated Course</li>
-                            <li>PI 100 Rizal: His Life and Works</li>
-                        </ol>
-                    </div>
-                    <h3>BS FOOD TECHNOLOGY</h3>
-                    <div>                  
-                      <p>
-                        BS Food Technology is a 4-year program that seeks to train students to be the prime movers of the food industry. 
-                        The program focuses on providing students with appropriate knowledge, skills, and technique of the foundation 
-                        courses of food technology in the interest of developing new food products, processes, and innovative food systems. 
-                        Ultimately, graduates will be equipped with holistic understanding of food science and other disciplines to: ensure 
-                        food safety and security; be able to define problems related to food systems, identify potential causes and solutions, 
-                        and making innovative decisions and recommendations; to demonstrate skills in the evaluation and advocacy of 
-                        food-related policies; and to develop socially, culturally and environmentally related food systems that promote equity 
-                        and sustainability. 
-                      </p>
-                      <h4>SUBJECTS</h4>
-                      <p>GENERAL CHEMISTRY AND BIOLOGY</p>
-                      <ul>
-                        <li>College Chemistry I and II</li>
-                        <li>Organic Chemistry</li>       
-                        <li>Biochemistry</li>   
-                        <li>Quantitative Inorganic Chemistry</li>                        
-                        <li>Food Analysis</li>                     
-                        <li>General Biology</li>
-                        <li>Microbiology</li>                     
-                      </ul>
-                      <p>MATHEMATICS AND PHYSICS</p>
-                      <ul>
-                        <li>Algebra and Trigonometry</li>
-                        <li>Analytic Geometry and Calculus I and II</li>
-                        <li>Elementary Statistics</li>
-                        <li>General Physics</li>
-                        <li>Statistical Methods and Experimental Design</li>
-                      </ul>
-                      <p>MANAGEMENT</p>
-                      <ul>
-                        <li>Enterprise Development</li>
-                      </ul>
-                      <p>FOOD AND SCIENCE TECHNOLOGY</p>
-                      <ul>
-                        <li>Food Microbiology</li>
-                        <li>Sensory Evaluation of Foods</li>
-                        <li>Food Chemistry I and II</li>
-                        <li>Food Engineering I and II </li>
-                        <li>Food Processing I and II</li>
-                        <li>Methods of Food Research</li>
-                        <li>Product Development</li>
-                        <li>Food Packaging and Shelf-life Evaluation</li>  
-                        <li>Food Laws and Regulation                      </li>
-                        <li>Food Safety</li>
-                        <li>Quality Assurance</li>
-                        <li>Processing of Fruits and Vegetables</li>
-                        <li>Principles and Practice in Food Processing Management</li>                
-                        <li>Principles and Practice in Food Processing Waste Management</li>                    
-                        <li>Plant Practice</li>                
-                        <li>Undergraduate Thesis</li> 
-                      </ul> 
-                      <p>LEGISLATED COURSE</p>  
-                      <ul>
-                        <li>PI 100, Life and works of Jose Rizal</li>
-                      </ul>
-                      <p>GENERAL COURSES</p>
-                      <p>Required: </p> 
-                      <ul>
-                        <li>Math, Culture and Society (MATH 10)</li>
-                        <li>Critical Perspectives in the Arts (ARTS 1)</li>            
-                        <li>Mindanao Studies (MinStud 1)</li>
-                        <li>Ethics and Moral Reasoning in Everyday Life(Ethics 1)</li>                       
-                        <li>Science, Technology and Society (STS 1)</li>                       
-                        <li>Kasaysayan ng Pilipinas (KAS 1)</li>                
-                      </ul>                                      
-                    </div>
-                    <h3>BS COMPUTER SCIENCE</h3>
-                    <div>
-                      <p>PROGRAM PROFILE</p>
-                      <p>The program was instituted in UP Mindanao in 1998 in response to the increasing demand 
-                        for highly skilled and capable IT professionals in the region. This program aims to produce 
-                        graduates who are prepared for research and instruction activities related to the discipline 
-                        and advanced studies in CS and trained to develop software systems.
-                      </p>
-                      <p>COURSE PROSPECTUS</p>
-                      <p>SUBJECTS</p>
-                      <p>COMPUTER SCIENCE</p>
-                      <ul>
-                        <li>Intro to Computer Science</li>
-                        <li>Discrete Mathematical Structures in Comp. Science</li>
-                        <li>Fundamentals of Programming</li>
-                        <li>Discrete Mathematical Structures in Comp. Sci. II</li>
-                        <li>Data Structures</li>
-                        <li>Logic Design and Digital Computer Circuits</li>
-                        <li>Design and Implementation of Programming</li>
-                        <li>Languages</li>
-                        <li>File Processing and Database Systems</li>
-                        <li>Intro to Computer Org. and Machine Level</li>
-                        <li>Programming</li>
-                        <li>Numerical & Symbolic Computation</li>
-                        <li>Operating Systems</li>
-                        <li>Intro to Software Engineering</li>
-                        <li>Computer Architecture</li>
-                        <li>Data Communications and Networking</li>
-                        <li>Automata and Languages Theory</li>
-                        <li>Design and Analysis of Algorithms</li>
-                        <li>Undergraduate Seminar</li>
-                        <li>Undergraduate Thesis I & II</li>
-                      </ul>
-                      <p>MATH AND PHYSICS SUBJECTS</p>
-                      <ul>
-                        <li>College Algebra & Trigo.</li>
-                        <li>Calculus & Analytic Geo.</li>
-                        <li>Calculus & Analytical Geo. II</li>
-                        <li>General Physics I</li>
-                        <li>Elementary Statistics</li>
-                        <li>Calculus & Analytic Geo. III</li>
-                        <li>General Physics</li>
-                        <li>Statistical Methods</li>              
-                      </ul>
-                      <p>LEGISLATED COURSES</p>
-                      <ul>
-                        <li>PI 100, Life and Works of Jose Rizal</li>
-                      </ul>
-                      <p>REVISED GENERAL EDUCATION COURSES</p>
-                      <ul>
-                        <li>AH1, Dimensions of Identity: Understanding</li>
-                        <li>Ourselves Through Reading and Writing</li>
-                        <li>AH2, Exploring Ideas Through Academic Writing</li>
-                        <li>AH 3, Effective Speech Communication</li>
-                        <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
-                        <li>AH 5, Art and Society</li>
-                        <li>AH 6, Visual Communication and Society</li>
-                        <li>AH 7, Significant Themes in Literature and Films</li>
-                        <li>SSP 1, Philippine History</li>
-                        <li>SSP 2, Asia & The World</li>
-                        <li>SSP 3, Foundations of Behavioral Science</li>
-                        <li>SSP 4, Social, Eco & Political Thought</li>
-                        <li>SSP 5, Philosophical Analysis</li>
-                        <li>SSP 6, Wika at Pagka-Pilipino</li>
-                        <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
-                        <li>MST 1, Foundation of Natural Sciences I</li>
-                        <li>MST 2, Foundation of Natural Sciences II</li>
-                        <li>MST 3, Mathematics for General Education</li>
-                        <li>MST 4, Science, Technology and Society</li>
-                        <li>MST 5, Biotechnology and Society</li>
-                        <li>MST 6, Biodiversity Challenge</li>                        
-                      </ul>                      
-                    </div>
-                    <h3>BS BIOLOGY</h3>
-                    <div>
-                        <p>PROGRAM PROFILE</p>
-                        <p>The Department of Biological Sciences and Environmental Studies (BSES) offers a 4-year BS 
-                          Biology degree program with two major fields of specialization to choose from, Ecology and 
-                          Cell Biology. Areas of study in Ecology include life forms in terrestrial and aquatic ecosystems. 
-                          The Cell Biology division has recently been expanded to include not only studies of life forms<br><br> 
-                          at cellular level, but also molecular studies of plant, animal and microbial life forms
-                          The BS Biology curriculum also includes the conduct of an undergraduate thesis which provides 
-                          the students the opportunity to perform research work along their chosen field of specialization 
-                          under the guidance of their selected faculty adviser.</p>
-                        <p>COURSE PROSPECTUS</p>
-                        <p>SUBJECTS</p>
-                        <p>BIOLOGY SUBJECTS</p>
-                        <ul>
-                          <li>BIO 10, Introduction to Biology</li>
-                          <li>BIO 70, Earth’s Processes & Biological Systems</li>
-                          <li>BOT 3, Intermediate Botany</li>
-                          <li>MCB 1, General Microbiology</li>
-                          <li>BIO 150, Principles of Ecology</li>
-                          <li>ZOO 3, Intermediate Zoology</li>
-                          <li>BIO 30, Genetics</li>
-                          <li>BIO 101, Introductory Molecular Biology</li>
-                          <li>BIO 120, Cell Biology</li>
-                          <li>BIO 140, Evolutionary Biology</li>
-                          <li>BIO 199, Undergraduate Seminar</li>
-                          <li>BIO 199, Undergraduate Seminar</li>                      
-                        </ul>
-                        <p>MATHEMATICS SUBJECTS</p>
-                        <ul>
-                          <li>MATH 11, College Algebra</li>
-                          <li>MATH 14, Plane Trigonometry</li>
-                          <li>MATH 26, Analytic Geometry & Calculus I</li>
-                          <li>STAT 1, Elementary Statistics</li>
-                        </ul>
-                        <p>FILIPINO SUBJECTS</p>
-                        <ul>
-                          <li>FIL 20, Mga Piling Katha ng mga Manunulat na Pilipino</li>
-                          <li>FIL 1, Sining ng Pakikipagtalastasan</li>
-                        </ul>
-                        <p>LEGISLATED COURSES</p>
-                        <ul>
-                          <li>PI 100, Life and Works of Jose Rizal</li>
-                        </ul>
-                        <p>REVISED GENERAL EDUCATION COURSES</p>
-                        <ul>
-                          <li>AH1, Dimensions of Identity: Understanding Ourselves Through Reading and Writing</li>
-                          <li>AH2, Exploring Ideas Through Academic Writing</li>
-                          <li>AH 3, Effective Speech Communication</li>
-                          <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
-                          <li>AH 5, Art and Society</li>
-                          <li>AH 6, Visual Communication and Society</li>
-                          <li>AH 7, Significant Themes in Literature and Films</li>
-                          <li>SSP 1, Philippine History</li>
-                          <li>SSP 2, Asia & The World</li>
-                          <li>SSP 3, Foundations of Behavioral Science</li>
-                          <li>SSP 4, Social, Eco & Political Thought</li>
-                          <li>SSP 5, Philosophical Analysis</li>
-                          <li>SSP 6, Wika at Pagka-Pilipino</li>
-                          <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
-                          <li>MST 1, Foundation of Natural Sciences I</li>
-                          <li>MST 2, Foundation of Natural Sciences II</li>
-                          <li>MST 3, Mathematics for General Education</li>
-                          <li>MST 4, Science, Technology and Society</li>
-                          <li>MST 5, Biotechnology and Society</li>
-                          <li>MST 6, Biodiversity Challenge</li>
-                        </ul>
-                    </div>
-                    <h3>BS APPLIED MATHEMATICS</h3>
-                    <div>
-                        <p>PROGRAM PROFILE</p>
-                        <p>The BS Applied Mathematics program is designed to prepare the students to 
-                          work in industry, commerce, banks, the public sector and the academe. The 
-                          students have also the opportunity to develop their written and oral communication 
-                          skills, interpersonal relationships, and teaching abilities. The goal of this 
-                          program is to produce dynamic, adaptive, highly competent graduates with strong 
-                          mathematical and computational skills, and research capabilities. Graduates in this program 
-                          are expected to be highly knowledgeable in applying the appropriate mathematical 
-                          techniques in their areas of application, particularly in data analysis, modeling and optimization.
-                        </p>
-                        <p>MATHEMATICS SUBJECT</p>
-                        <ul>
-                          <li>Finite Mathematics</li>
-                          <li>Algebra and Trigonometry</li>
-                          <li>Mathematical Analysis I, II and III</li>
-                          <li>Elementary Statistics</li>
-                          <li>Computer Programming</li>
-                          <li>Mathematical Modeling</li>
-                          <li>Logic and Set Theory</li>
-                          <li>Linear Algebra</li>
-                          <li>Introductory Combinatorics</li>
-                          <li>Numerical Analysis I and II</li>
-                          <li>Introduction to Probability Theory</li>
-                          <li>Statistical Methods</li>
-                          <li>Introduction to Mathematical Decision Theory</li>
-                          <li>Linear Programming</li>
-                          <li>Mathematical Models in Operations</li>
-                          <li>Research I</li>
-                          <li>Ordinary Differential Equations</li>
-                          <li>Non-Linear Programming</li>
-                          <li>Integer and Dynamic Programming</li>
-                          <li>Modern Algebra I</li>
-                          <li>Advanced Calculus I</li>
-                        </ul>
-                        <p>FILIPINO SUBJECTS</p>
-                        <ul>
-                          <li>FIL 20, Mga Piling Katha ng mga Manunulat na Pilipino</li>
-                          <li>FIL 1, Sining ng Pakikipagtalastasan</li>
-                        </ul>
-                        <p>LEGISLATED COURSES</p>
-                        <ul>
-                          <li>PI 100, Life and Works of Jose Rizal</li>
-                        </ul>
-                        <p>REVISED GENERAL EDUCATION COURSES</p>
-                        <ul>
-                          <li>AH1, Dimensions of Identity: Understanding</li>
-                          <li>Ourselves Through Reading and Writing</li>
-                          <li>AH2, Exploring Ideas Through Academic Writing</li>
-                          <li>AH 3, Effective Speech Communication</li>
-                          <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
-                          <li>AH 5, Art and Society</li>
-                          <li>AH 6, Visual Communication and Society</li>
-                          <li>AH 7, Significant Themes in Literature and Films</li>
-                          <li>SSP 1, Philippine History</li>
-                          <li>SSP 2, Asia & the World</li>
-                          <li>SSP 3, Foundations of Behavioral Science</li>
-                          <li>SSP 4, Social, Eco & Political Thought</li>
-                          <li>SSP 5, Philosophical Analysis</li>
-                          <li>SSP 6, Wika at Pagka-Pilipino</li>
-                          <li>SSP 7, The Hitchiker’s Guide to Mindanao</li>
-                          <li>MST 1, Foundation of Natural Sciences I</li>
-                          <li>MST 2, Foundation of Natural Sciences II</li>
-                          <li>MST 3, Mathematics for General Education</li>
-                          <li>MST 4, Science, Technology and Society</li>
-                          <li>MST 5, Biotechnology and Society</li>
-                          <li>MST 6, Biodivesity Challenge</li>
-                        </ul>  
-                    </div>
-                    <h3>BA ENGLISH</h3>
-                    <div>
-                        <p>PROGRAM PROFILE</p>
-                        <p>The BA English program trains students to become critical and creative thinkers who 
-                          are skilled not just in the production of creative works but also in the practice of 
-                          the English language in the global setting.<br><br>BA English graduates now work as lawyers, 
-                          business process outsourcing specialists, medical transcribers, information officers, 
-                          public relations writers, copywriters, teachers, scriptwriters, technical writers, 
-                          journalists, marketing communication specialists, and authors or editors of books and magazines.
-                        </p>
-                        <p>COURSE PROSPECTUS</p>
-                        <p>CORE SUBJECTS</p>
-                        <ul>
-                          <li>FOREIGN LANGUAGE I, II, III, IV</li>
-                          <li>Critical Approach to Literature I and II</li>
-                          <li>Survey of English Literature I and II</li>
-                          <li>Survey of American Literature I and II</li>
-                          <li>Introduction to Shakespeare</li>
-                          <li>Introduction to Creative Writing</li>
-                          <li>Study of the English Language</li>
-                          <li>The Literature of the Philipines in English I and II</li>
-                          <li>Literary Translation</li>
-                          <li>Philippine Regional Literature in English Translation</li>                        
-                        </ul>
-                        <p>LEGISLATED COURSES</p>
-                        <ul>
-                          <li>PI 100, Life and Works of Jose Rizal</li>
-                        </ul>
-                        <p>REVISED GENERAL EDUCATION COURSES</p>
-                        <ul>
-                          <li>AH 1, Dimensions of Identity: Understanding Ourselves Through Reading and Writing</li>
-                          <li>AH 2, Exploring Ideas Through Academic Writing</li>
-                          <li>AH 3, Effective Speech Communication</li>
-                          <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
-                          <li>AH 5, Art and Society</li>
-                          <li>AH 6, Visual Communication and Society</li>
-                          <li>AH 7, Significant Themes in Literature and Films</li>
-                          <li>SSP 1, Philippine History</li>
-                          <li>SSP 2, Asia & The World</li>
-                          <li>SSP 3, Foundations of Behavioral Science</li>
-                          <li>SSP 4, Social, Economic & Political Thought</li>
-                          <li>SSP 5, Philosophical Analysis</li>
-                          <li>SSP 6, Wika at Pagka-Pilipino</li>
-                          <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
-                          <li>MST 1, Foundation of Natural Sciences I</li>
-                          <li>MST 2, Foundation of Natural Sciences II</li>
-                          <li>MST 3, Mathematics for General Education</li>
-                          <li>MST 4, Science, Technology and Society</li>
-                          <li>MST 5, Biotechnology and Society</li>
-                          <li>MST 6, Biodiversity Challenge</li>
-                        </ul>
-                    </div>
-                    <h3>BA COMMUNICATION AND MEDIA ARTS</h3>
-                    <div>
-                        <p>PROGRAM PROFILE</p>
-                        <p>The BA Communication and Media Arts program trains students to be effective 
-                          and savvy communication and media specialists who are able to critically, 
-                          creatively, and imaginatively use their skills in the incisive analysis of social 
-                          and cultural realities. BA Communication and Media Arts graduates are employed as 
-                          corporate communication executives, media production staff, public relations officers, 
-                          business process outsourcing specialists, theater artists, video production staff, 
-                          advertising executives, web designers, teachers, communications and market researchers, 
-                          speech writers, and print and broadcast journalists.
-                        </p>
-                        <p>SUBJECTS</p>
-                        <p>CORE SUBJECTS</p>
-                        <ul>
-                          <li>Introduction to Communication Theories</li>
-                          <li>The Structure and Function of Language</li>
-                          <li>Language and Culture</li>
-                          <li>Design Fundamentals</li>
-                          <li>Principles of Public Relations and Advertising</li>
-                          <li>Ethics in Organizational Communication</li>
-                          <li>Prose Style</li>
-                          <li>Aesthetics</li>
-                          <li>Research Principles and Methods in Communication Arts</li>                        
-                        </ul>
-                        <p>MEDIA ARTS MAJOR SUBJECTS</p>
-                        <ul>
-                          <li>Media: History, Development and Theories</li>
-                          <li>Photography: Theory and Practice</li>
-                          <li>New Media in Communication</li>
-                          <li>Writing for Print Media, Radio and Television</li>
-                          <li>Print Media Production</li>
-                          <li>Audio Production</li>
-                          <li>Television / Video Production</li>                        
-                        </ul>
-                        <p>SPEECH COMMUNICATION MAJOR SUBJECTS</p>
-                        <ul>
-                          <li>Rhetoric</li>
-                          <li>Voice and Diction</li>
-                          <li>Oral Interpretation</li>
-                          <li>Occasional Speeches</li>
-                          <li>Philippine Public Address</li>
-                          <li>Group Discussion and Leadership</li>
-                          <li>Communication in Public Relations</li>
-                          <li>Organizational Communication</li>
-                          <li>Business and Corporate Communication</li>
-                          <li>Crisis Communication</li>
-                          <li>Communication Planning</li>
-                          <li>Intercultural Communication</li>                        
-                        </ul>
-                        <p>REVISED GENERAL EDUCATION COURSES</p>
-                        <ul>
-                          <li>AH 1, Dimensions of Identity: Understanding Ourselves Through Reading and Writing</li>
-                          <li>AH 2, Exploring Ideas Through Academic Writing</li>
-                          <li>AH 3, Effective Speech Communication</li>
-                          <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
-                          <li>AH 5, Art and Society</li>
-                          <li>AH 6, Visual Communication and Society</li>
-                          <li>AH 7, Significant Themes in Literature and Films</li>
-                          <li>SSP 1, Philippine History</li>
-                          <li>SSP 2, Asia & The World</li>
-                          <li>SSP 3, Foundations of Behavioral Science</li>
-                          <li>SSP 4, Social, Economic & Political Thought</li>
-                          <li>SSP 5, Philosophical Analysis</li>
-                          <li>SSP 6, Wika at Pagka-Pilipino</li>
-                          <li>SSP 7, The Hitchiker’s Guide to Mindanao</li>
-                          <li>MST 1, Foundation of Natural Sciences I</li>
-                          <li>MST 2, Foundation of Natural Sciences II</li>
-                          <li>MST 3, Mathematics for General Education</li>
-                          <li>MST 4, Science, Technology and Society</li>
-                          <li>MST 5, Biotechnology and Society</li>
-                          <li>MST 6, Biodiversity Challenge</li>                        
-                        </ul>
-                    </div>
-                    <h3>BS ARCHITECTURE</h3>
-                    <div>
-                      <p>PROGRAM PROFILE</p>
-                      <p>The BS Architecture program trains students to be professional architects 
-                        with a high sense of social and cultural awareness that is the result of five 
-                        years of study in construction and building technology, architectural history 
-                        and critical theory, and urban and regional planning.<br><br>BS Architecture graduates 
-                        now work as professional design architects, heritage planners/conservators, 
-                        museum curators, architectural critics, architectural photographers, renderers,
-                        AutoCAD specialists, cartographers, building development scientists, corporate 
-                        consultants, environmental planners, and real estate project managers.</p>
-                      <p>COURSE PROSPECTUS</p>
-                      <p>CORE SUBJECTS</p>
-                      <ul>
-                        <li>Architectural Drafting</li>
-                        <li>Monochromatic Drawing</li>
-                        <li>Architectural Design I - X</li>
-                        <li>Color Rendering</li>
-                        <li>Perspectives, Shades and Shadows</li>
-                        <li>History of Architecture I and II</li>
-                        <li>Presentation Techniques I and II</li>
-                        <li>Materials of Building Technology</li>
-                        <li>Building Utilities</li>
-                        <li>Building Construction I - III</li>
-                        <li>Mechanics of Architectural Structures I and II</li>
-                        <li>Building Laws</li>
-                        <li>Plumbing and Sanitary Services</li>
-                        <li>Research Methods in Architecture</li>
-                        <li>Elementary Surveying</li>
-                        <li>Mechanical and Electrical Systems</li>
-                        <li>Site Planning and Landscape Structure</li>
-                        <li>Structure Design I - III</li>
-                        <li>Comprehensive Services of the Architect</li>
-                        <li>Socio-Cultural and Institutional Aspects of Housing</li>
-                        <li>Finance, Taxation, Civics and Land Reform for Architects</li>                      
-                      </ul>
-                      <p>REVISED GENERAL EDUCATION COURSES</p>
-                      <ul>
-                        <li>AH 1, Dimensions of Identity: Understanding Ourselves Through Reading and Writing</li>
-                        <li>AH 2, Exploring Ideas Through Academic Writing</li>
-                        <li>AH 3, Effective Speech Communication</li>
-                        <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
-                        <li>AH 5, Art and Society</li>
-                        <li>AH 6, Visual Communication and Society</li>
-                        <li>AH 7, Significant Themes in Literature and Films</li>
-                        <li>SSP 1, Philippine History</li>
-                        <li>SSP 2, Asia & The World</li>
-                        <li>SSP 3, Foundations of Behavioral Science</li>
-                        <li>SSP 4, Social, Economic & Political Thought</li>
-                        <li>SSP 5, Philosophical Analysis</li>
-                        <li>SSP 6, Wika at Pagka-Pilipino</li>
-                        <li>SSP 7, The Hitchiker’s Guide to Mindanao</li>
-                        <li>MST 1, Foundation of Natural Sciences I</li>
-                        <li>MST 2, Foundation of Natural Sciences II</li>
-                        <li>MST 3, Mathematics for General Education</li>
-                        <li>MST 4, Science, Technology and Society</li>
-                        <li>MST 5, Biotechnology and Society</li>
-                        <li>MST 6, Biodiversity Challenge</li>                      
-                      </ul>
-                    </div>
-                    <h3>MASTER IN MANAGEMENT</h3>
-                    <div>
-                      <p>Today’s world of work is more complex and volatile than it was years back. 
-                        Managerial problems, especially those faced by decision-makers at the highest 
-                        levels of administration, have become less structured than they were in the past.  
-                        Increasingly, managers have to deal with more sophisticated technologies, more 
-                        rapidly expanding and contracting markets. In adapting to these changes, organizations 
-                        have become flatter, smaller and more flexible in structure, more integrative in approach 
-                        to decision-making, and more global in operation.<br><br> Given the dynamism of our present work 
-                        environment, it becomes imperative for organizational leaders to develop the capability to 
-                        assess a broad spectrum of interrelated issues and to interpret a continuous stream of data 
-                        that are vital to decision-making.<br><br> Decision-makers ought to be humanistic because people are 
-                        the carriers of today’s most important resources (knowledge and information), and holistic because 
-                        managerial problems and issues are interrelated.
-                      </p>
-                      <p>The program aims to hone the following managerial skills and competences: </p>
-                      <ul>
-                        <li>Human skills – ability to lead and motivate</li>
-                        <li>Analytical skills – ability to discern relationships, detect dysfunction, identity and evaluate options</li>
-                        <li>Integrative skills– ability to perceive the whole picture and latticework of interdependencies</li>
-                        <li>Innovativeness – ability to develop approaches in applying new and continually evolving stock of knowledge and information</li>
-                        <li>Proactiveness – the ability to anticipate problems and issues to set the tone for change and develop orientation or concern for 
-                          the enhancement of the human condition in the long run</li>                        
-                      </ul>
-                      <h4>ADMISSION REQUIREMENTS</h4>
-                      <ol class="1">
-                        <li>A bachelor’s degree in any field of study</li>
-                        <li>A minimum of 2.5 or equivalent average grade</li>
-                        <li>At least 2 years of managerial or supervisory experience</li>
-                        <li>A favorable recommendation from a superior and at least one other person who is well acquainted with, but not related to, the applicant</li>
-                        <li>Passing the Graduate Admission Test</li>
-                        <li>Favorable assessment of interview results</li>
-                        <li>Attendance to the Bridging Program</li>                       
-                      </ol>
-                      <p>COURSE PROSPECTUS</p>
-                      <h5>First Semester (Tool Subjects)</h5>
-                      <ul>
-                        <li>M206 Organizational Analysis</li>
-                        <li>M209 Systems Approach to Strategic Planning</li>
-                        <li>M210 Methods Approach for Business and Management Research</li>                        
-                      </ul>
-                      <h5>Second Semester (Functional Subjects)</h5>
-                      <ul>
-                        <li>M211 Marketing Management</li>
-                        <li>M212 Financial Management</li>
-                        <li>M216 Human Resource Management and Industrial Relations Systems</li>                         
-                      </ul>
-                      <h5>Third Semester (Integrative Block)</h5>
-                      <ul>
-                        <li>M217 Operations and Production Management</li>
-                        <li>MGT213 Management Accounting and Control</li>
-                        <li>M224 Managerial Economics</li>         
-                      </ul>
-                      <h5>Fourth Semester</h5>
-                      <ul>
-                        <li>Elective</li>
-                        <li>Elective</li>
-                        <li>M241 Policy and Strategic Planning</li>                         
-                      </ul>
-                      <h4>ELECTIVES</h4>
-                      <ul>
-                        <li>ABM230 Agribusiness Systems</li>
-                        <li>ABM234 Special Topics in Agribusiness Management</li>
-                        <li>DM232 Community Management</li>
-                        <li>DM233 Local Governance</li>
-                        <li>IR204 Labor and National Economy</li>
-                        <li>IR211 Collective Bargaining and Industrial Democracy</li>
-                        <li>M201 Deterministic and Probabilistic Models of Choice</li>
-                        <li>M205 Management Communication and Information</li>
-                        <li>M234b Special Topics in Management: Value Chain Management</li>	 
-                        <li>M235 Managing a Sustainable Enterprise</li>                       
-                      </ul>
-                    </div>
-                    <h3>DIPLOMA/MASTER OF ARTS IN URBAN AND REGIONAL PLANNING</h3>
-                    <div>
-                      <p>CURRICULUM</p>
-                      <p>All courses equivalent to 3 units except where indicated</p>
-                      <p>Courses for Diploma in Urban and Regional Planning (DURP)</p>
-                      <ul>
-                        <li>P201    Theory and Practice of Planning</li>   
-                        <li>P203    Land Use Planning</li>
-                        <li>P205    Project Planning and Development</li>   
-                        <li>P210    Planning Process</li>
-                        <li>P210.1    Planning Workshop    5 units</li>
-                        <li>P214    Planning Analysis and Techniques</li>   
-                        <li>P231    Site Planning</li> 
-                        <li>P299    Research Method</li>                        
-                      </ul>
-                      <p>TOTAL NO. OF UNITS DURP        26 UNITS</p>
-                      <p>Additional courses for degree in Master of Arts in Urban and Regional Planning (MAURP)</p>
-                      <ul>
-                        <li>P229    Special Problems in Regional Planning</li>   
-                        <li>P300    Master's Thesis        6 units</li>                 
-                      </ul>
-                      <p>TOTAL NO. OF UNITS MAURP        35 UNITS</p>
-                    </div>
-                    <h3>DIPLOMA IN EXERCISE AND SPORTS SCIENCE</h3>
-                    <div>
-                      <p>CURRICULUM</p>
-                      <p>All courses equivalent to 3 units</p>
-                      <p>1st Year 1st Semester</p>
-                      <ul>
-                        <li>SS 102: Human Anatomy and Physiology I</li>
-                        <li>PEd 93: Philosophy of Sports and Physical Education</li>
-                        <li>PEd/SS Elective: (SS 191 Principles of Coaching)</li>
-                      </ul>
-                      <p>1st Year 2nd Semester</p>
-                      <ul>
-                        <li>SS 130: First Aid</li>
-                        <li>SS 103: Human Anatomy and Physiology 2</li>
-                        <li>PEd/SS Elective: (PEd 94 Administration and Supervision of Physical Education)</li> 
-                        <li>PEd/SS Elective: (SS 104 Tests and Measurements in Human Movements)</li>                        
-                      </ul>
-                      <p>2nd Year 1st Semester</p>
-                      <ul>
-                        <li>SS 140: Exercise Physiology I</li>
-                        <li>SS 150: Acquisition of Motor Skills</li>
-                        <li>PEd/SS Elective: (PEd 190 Management of Sports and Recreation-related Services)</li>                        
-                      </ul> 
-                      <p>2nd Year 2nd Semester</p>
-                      <ul>
-                        <li>PEd/SS Elective: PEd 196 CSS Internship</li>
-                        <li>PEd/SS Elective: PEd 92 Philippine Games</li>
-                        <li>PEd/SS elective: SS 161 Psychology in Sports</li>                        
-                      </ul>                  
-                    </div>
-                    <h3>MS FOOD SCIENCE</h3>
-                    <div>
-                      <h4>Background</h4>
-                      <p>As UP Mindanao is envisioned to grow into a comprehensive University, 
-                        its academic programs shall put emphasis on science, technology, agriculture, 
-                        agriculture and medicine so that it can assist the region in the process of nation 
-                        building.<br><br>As new global issues emerge, the food industry is beset with concerns in 
-                        waste reduction, food safety, food security, development of new products and the like.  
-                        The University believes that the MS Food Science program can assist in building up human 
-                        resource who are equipped to find solutions to these problems. The Master’s Program is 
-                        responsive to the needs of the food industry and the academe.
-                      </p>
-                      <h4>Objectives</h4>
-                      <p>The MS Food Science is intended for food entrepreneurs, personnel of government agencies 
-                        involved in food industries, policy makers, the academe and research institutions. It aims to:
-                      </p>
-                      <ul>
-                        <li>Train manpower than can lead in value added industries, research & development and manufacturing in Mindanao;</li>
-                        <li>Provide technical services to food processors & farmers actively involved in food production; and</li>
-                        <li>Develop faculty of institutions in the area who are offering the undergraduate course in Food Technology.</li>
-                        <ul>
-                          <li>Cover letter addressed to the Dean, signifying intent to apply and the degree sought</li>
-                          <li>Original or Certified Copy of Official Transcript of Records</li>
-                          <li>Two sealed letters of recommendation (GS-Form 2) from  former professors, supervisors or colleagues</li>
-                          <li>For foreign applicants: Certification of medium of instruction (in previous degree) by the University Registrar or results of TOEFL (min score: 600) or IELTS (min score: 6.5)</li>
-                          <li>Non-refundable application fee (Php 200.00 for Filipino applicants and US$25.00 for foreign applicants)</li>                          
-                        </ul>                    
-                      </ul>
-                      <h4>Admission Requirements</h4>
-                      <p>Applicants for admission must be holders of a bachelor’s degree in Food Science and Technology or related disciplines  with a general weighted average of 2.50 or better.<br><br>
-                        A duly accomplished Application form (GS Form -1) must be submitted with the following documents:<br><br> 
-                         Note: A student with inadequate background in food science will be required to take additional courses without credit.
-                      </p>
-                      <h4>Curriculum</h4>
-                      <ul>
-                        <li>Core Courses (TOTAL = 19 units)</li>
-                        <ul>
-                          <li>FST 202 Food Analysis (3 units)</li>
-                          <li>FST 210 Food Biochemistry (3 units)</li>
-                          <li>FST 221 Advanced Food Microbiology (3 units)</li>
-                          <li>FST 235 Thermal Processing (3 units)</li>
-                          <li>FST 299 Graduate Seminar (1 unit)</li>
-                          <li>FST 300 Master’s Thesis (6 units)</li>               
-                        </ul>
-                        <li>Other Major Courses (3 units)</li>
-                        <ul>
-                          <li>FST 219 Postharvest Biochemistry of Fruits & Vegetables</li>
-                          <li>FST 220 Microbial Aspects of Food Processing</li>
-                          <li>FST 236 Dehydration and Freezing</li>
-                          <li>FST 240 Tropical Food Processing</li>
-                          <li>FST 241 Tropical Fruits & Vegetables Processing</li>
-                          <li>FST 290 Special Problems</li>
-                          <li>FST 291 Special Topics</li>
-                        </ul>
-                        <li>Minor subjects (9 units)</li>
-                        <ul>
-                          <li>200-level or at most 100-level Courses from another college offering graduate programs</li>
-                        </ul>                                       
-                      </ul>
-                    </div>
-                    <h3>PhD BY RESEARCH</h3>
-                    <div>
-                      <p>The PhD by Research program aims to produce graduates who have contributed 
-                        to the body of knowledge in specific fields of study or to have provided 
-                        innovative, theory-based, systematic, and practical solutions to the significant 
-                        concerns of specific industries.Graduates will have advanced systematic knowledge 
-                        and skills applied in a highly specialized or complex multidisciplinary field of 
-                        professional work, research, and/or further study that require management expertise, 
-                        innovation, and leadership. Graduates will demonstrate an in-depth understanding of 
-                        theories and concepts necessary to advance learning and/or professional practice as 
-                        well as to practice research skills providing a critical perspective of the real-world 
-                        complex issues related to a specific field of study.<br><br>The PhD by Research program 
-                        aims to hone further the research skill of the candidate, acquired mostly through experience 
-                        under the professional guidance of specialist(s) in his/her particular area of specialization. 
-                        The program allows the candidate to earn the degree through submission, and the successful 
-                        defense of a dissertation, without the usual academic course requirements. The program requires 
-                        the candidate to devote almost his/her entire residency to research.
-                      </p>
-                      <h4>Admission Requirements</h4>
-                      <ol class="1">
-                        <li>An applicant for admission to graduate work for the degree of Doctor of Philosophy (PhD) by Research must:</li>
-                        <ul>
-                          <li>Be a holder of a Master of Science (MS) degree from a recognized institution in the same area admission to the PhD degree is applied for;</li>
-                          <li>Have a grade point average of 1.75 or better in the MS degree program;</li>
-                          <li>Have at least 3 years’ experience in research beyond the MS degree; and</li>
-                          <li>Have been sole or senior/lead author of at least one published paper in the intended area of specialization (excluding the MS and BS theses) in reputable refereed journals.</li>                          
-                        </ul>
-                        <li>A duly accomplished application form must be submitted with the following documents:</li>
-                        <ul>
-                          <li>Original and photocopy of the Official Transcript of Records, in English language, with no remarks and with an explanation of the grading system used, from all tertiary and graduate institutions attended;</li>
-                          <li>Photocopy of BS and MS diplomas;</li>
-                          <li>Certification from the immediate head of the agency that the applicant has at least 3 years of satisfactory research experience;</li>
-                          <li>Reprints or copies of the applicant’s publications (at least one from reputable journals) wherein the applicant is the sole or senior author;</li>
-                          <li>Capsule research proposal not exceeding five pages which shall include the title, rationale, objectives, methodology, and references;</li>
-                          <li>For international students, certification from the office of the University Registrar of Previous University attended that the medium of instruction is English (if applicable), or results of Test of English as a Foreign Language (TOEFL) or results of the international English Language Testing System (IELTS), or its equivalent;</li>                         
-                          <li>Application fee (may be paid by bank transfer or in cash); and                         
-                          <li>Sealed letters of references from two former professors, superiors or colleagues, and a letter of reference from the applicant’s former Master’s Degree Adviser.                          
-                        </ul>
-                      </ol>
-                      <h4>Submission of application for First Semester AY2022-2023 is 30 June 2022. (Please email complete documents at somcs.upmindanao@up.edu.ph)</h4>
-                    </div>
-                </div>
-          </article>
+        <div>
+          <div class="label-acad-u">Academic Units</div>
+          <div class="sub1">
+            <select class="sub" id="dropdown">
+              <option selected>Select a Academic Unit</option>
+              <option data-url="../html/chss.html">
+                College of Humanities and Social Science
+              </option>
+              <option data-url="../html/csm.html">
+                College of Science and Mathematics
+              </option>
+              <option data-url="../html/som.html">School of Management</option>
+            </select>
+          </div>
         </div>
+
+        <a href="../html/academic-programs.html">Academic Programs</a>
       </div>
-    </section>
-  </main>
-</body>
+
+      <div class="signupBtn">
+        <a href="../html/signup.html">Sign-up</a>
+        <span><img src="../static/svg/arrow.svg" /></span>
+      </div>
+    </header>
+
+    <div class="spacer layer1"></div>
+
+    <main>
+      <section id="programs">
+        <h2>Degree Programs</h2>
+        <br />
+        <div id="accordion">
+          <h3>BS ANTHROPOLOGY</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              Anthropology is a social science that explores society and
+              humanity from a bio-cultural and cross-cultural approach. The
+              program is designed to provide students with training, field
+              experience, and hands-on exposure to methods of anthropological
+              research and visual documentation of different cultural life ways,
+              both local and globally.<br /><br />
+              Career opportunities for BS Anthropology graduates include
+              research analyst, educator, development worker, advertising
+              consultant, human resource officer, policy researcher, evaluator,
+              social auditor, cultural broker, social advocate, and museum
+              researcher, and other related fields.
+            </p>
+            COURSE PROSPECTUS<br /><br />
+            Subjects<br /><br />
+            GENERAL
+            <ul>
+              <li>General Anthropology</li>
+              <li>Introduction to Archaeology</li>
+              <li>Peoples and Cultures of Mindanao</li>
+              <li>Ecological Anthropology</li>
+              <li>Introduction to Economic Anthropology</li>
+              <li>Political and Legal Anthropology</li>
+              <li>Introduction to Folklore</li>
+              <li>Language and Culture</li>
+              <li>Culture Change & Applied Anthropology</li>
+              <li>Introduction to Social Anthropology</li>
+              <li>Sex and Culture</li>
+              <li>Theory in Anthropology I and II</li>
+              <li>Seminar in Ethnographic Writing</li>
+              <li>Visual Anthropology</li>
+              <li>Quantitative Methods in Social Research</li>
+              <li>Qualitative Methods in Social Research</li>
+            </ul>
+            <br />
+            <p>LINGUISTIC COURSES</p>
+            <ul>
+              <li>Introduction to Linguistics I and II</li>
+            </ul>
+            <br />
+            <p>LEGISLATED COURSES</p>
+            <ul>
+              <li>Introduction to Linguistics I and II</li>
+            </ul>
+            <br />
+            <p>REVISED GENERAL EDUCATION COURSES</p>
+            <ul>
+              <li>
+                AH 1, Dimensions of Identity: Understanding Ourselves Through
+                Reading and Writing
+              </li>
+              <li>AH 2, Exploring Ideas Through Academic Writing</li>
+              <li>AH 3, Effective Speech Communication</li>
+              <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
+              <li>AH 5, Art and Society</li>
+              <li>AH 6, Visual Communication and Society</li>
+              <li>AH 7, Significant Themes in Literature and Films</li>
+              <li>SSP 1, Philippine History</li>
+              <li>SSP 2, Asia & The World</li>
+              <li>SSP 3, Foundations of Behavioral Science</li>
+              <li>SSP 4, Social, Economic & Political Thought</li>
+              <li>SSP 5, Philosophical Analysis</li>
+              <li>SSP 6, Wika at Pagka-Pilipino</li>
+              <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
+              <li>MST 1, Foundation of Natural Sciences I</li>
+              <li>MST 2, Foundation of Natural Sciences II</li>
+              <li>MST 3, Mathematics for General Education</li>
+              <li>MST 4, Science, Technology and Society</li>
+              <li>MST 5, Biotechnology and Society</li>
+              <li>MST 6, Biodiversity Challenge</li>
+            </ul>
+          </div>
+          <h3>BS AGRIBUSINESS ECONOMICS</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              The program is based primarily on the needs of Mindanao,
+              particularly in pursuing the island’s role as the country’s food
+              basket amidst the challenges of globalization and international
+              competitiveness.<br /><br />
+              The program is unique as no other university in the region offers
+              a degree in economics that is geared towards applying economic
+              theories in agribusiness. The program will develop graduates with
+              strong theoretical and mathematical foundations necessary for the
+              application of concepts in real problems of the region. and museum
+              researcher, and other related fields.
+            </p>
+            <p>COURSE PROSPECTUS</p>
+            <ol type="A">
+              <li>Revised General Education (GE) courses</li>
+              <ul>
+                <p>UP Mindanao Required (18 units)</p>
+                <li>Kasaysayan ng Pilipinas</li>
+                <li>Critical Perspectives in the Arts</li>
+                <li>Ethics and Moral Reasoning in Everyday Life</li>
+                <li>Science, Technology and Society</li>
+                <li>Mathematics, Culture and Society</li>
+                <li>Mindanao Studies</li>
+                <p>BS ABE Required (12 units)</p>
+                <li>Critical Perspectives in Communication</li>
+                <li>Self and Society</li>
+                <li>Living Systems: Concepts and Dynamics</li>
+                <li>Probing the Physical World</li>
+              </ul>
+              <li>Foundation Courses</li>
+              <ul>
+                <li>Bio 10 Introduction to Biology</li>
+                <li>CrSc 10 Introduction to Crop Science</li>
+                <li>AnSci 10 Introduction to Animal Science</li>
+                <li>Stat 1 Elementary Statistics</li>
+                <li>AMAT 131 Statistical Methods and Experimental Design</li>
+                <li>Math 17 Algebra & Trigonometry</li>
+                <li>Math 26 Analytic Geometry & Calculus I</li>
+              </ul>
+              <li>Core Courses</li>
+              <ul>
+                <li>ECON 11 General Economics</li>
+                <li>ECON 101 Intermediate Macroeconomic Theory</li>
+                <li>ECON102 Intermediate Microeconomic Theory I</li>
+                <li>ECON104 Intermediate Microeconomic Theory II</li>
+                <li>ECON 130 Elements of Mathematical Economics</li>
+                <li>ECON 137 Introduction to Quantitative Economics</li>
+                <li>ECON 138 Selected Topics in Econometrics</li>
+                <li>MGT 101 Concepts & Dynamics of Management</li>
+                <li>MGT 111 Principles of Accounting</li>
+                <li>
+                  MGT 131 Introduction to Human Relation & Behavior in
+                  Organizations
+                </li>
+                <li>MGT 153 Introduction to Financial Management</li>
+                <li>MGT 155 Introduction to Marketing Management</li>
+                <li>ABE 102 Introduction to Agribusiness Economics</li>
+                <li>ABE 134 Applied Linear Programming for Economists</li>
+                <li>ABE 200 Undergraduate Thesis</li>
+              </ul>
+              <li>Specialized Course</li>
+              <ul>
+                <li>ABE 151 Agribusiness Systems</li>
+                <li>ABE 139 Qualitative Methods in Agribusiness Research</li>
+                <li>
+                  ABE 152 Agricultural Cooperative and Self-Managed Business
+                  Enterprise
+                </li>
+                <li>ABE 154 International Agricultural Trade</li>
+                <li>
+                  ABE 156 Agricultural Production Management for Agribusiness
+                  Enterprise
+                </li>
+                <li>ABE 157 Agricultural Price and Policy Analysis</li>
+                <li>ABE 158 Industrial Organization of Agricultural Markets</li>
+                <li>ABE 159 Macroeconomics of Agricultural Development</li>
+                <li>ABE 196 Research Writing in Agribusiness Economics</li>
+                <li>ABE 198 Practicum</li>
+                <li>ABE 199 Undergraduate Seminar in Agribusiness Economics</li>
+              </ul>
+              <li>Qualified Electives</li>
+              <ul>
+                <p>
+                  (Any three of the following courses as qualified elective)
+                </p>
+                <li>
+                  ECON 142 Economic Valuation for Environmental and Natural
+                  Resource Economics
+                </li>
+                <li>ECON 171 Natural Resource and Environmental Economics</li>
+                <li>ECON 192 Environmental Policy Analysis</li>
+                <li>ECON 190 Special Problem</li>
+                <li>ECON 191 Special Topic</li>
+                <li>
+                  ABE 138 Economics of Gender and Agribusiness Development
+                </li>
+                <li>ABE 150 Agricultural Policy & Management Communication</li>
+                <li>ABE 190 Special Problem</li>
+                <li>
+                  ABE 191 Introduction to Agribusiness Development and Planning
+                </li>
+                <li>ABE 197 Sustainable Agriculture</li>
+                <li>
+                  MGT 137 Introduction to Production & Operations Management
+                </li>
+                <li>MGT 141 Introduction to Enterprise Development</li>
+                <li>MGT 142 Enterprise Management</li>
+                <li>MGT191 Supply Chain Management</li>
+              </ul>
+              <li>Legislated Course</li>
+              <li>PI 100 Rizal: His Life and Works</li>
+            </ol>
+          </div>
+          <h3>BS FOOD TECHNOLOGY</h3>
+          <div>
+            <p>
+              BS Food Technology is a 4-year program that seeks to train
+              students to be the prime movers of the food industry. The program
+              focuses on providing students with appropriate knowledge, skills,
+              and technique of the foundation courses of food technology in the
+              interest of developing new food products, processes, and
+              innovative food systems. Ultimately, graduates will be equipped
+              with holistic understanding of food science and other disciplines
+              to: ensure food safety and security; be able to define problems
+              related to food systems, identify potential causes and solutions,
+              and making innovative decisions and recommendations; to
+              demonstrate skills in the evaluation and advocacy of food-related
+              policies; and to develop socially, culturally and environmentally
+              related food systems that promote equity and sustainability.
+            </p>
+            <h4>SUBJECTS</h4>
+            <p>GENERAL CHEMISTRY AND BIOLOGY</p>
+            <ul>
+              <li>College Chemistry I and II</li>
+              <li>Organic Chemistry</li>
+              <li>Biochemistry</li>
+              <li>Quantitative Inorganic Chemistry</li>
+              <li>Food Analysis</li>
+              <li>General Biology</li>
+              <li>Microbiology</li>
+            </ul>
+            <p>MATHEMATICS AND PHYSICS</p>
+            <ul>
+              <li>Algebra and Trigonometry</li>
+              <li>Analytic Geometry and Calculus I and II</li>
+              <li>Elementary Statistics</li>
+              <li>General Physics</li>
+              <li>Statistical Methods and Experimental Design</li>
+            </ul>
+            <p>MANAGEMENT</p>
+            <ul>
+              <li>Enterprise Development</li>
+            </ul>
+            <p>FOOD AND SCIENCE TECHNOLOGY</p>
+            <ul>
+              <li>Food Microbiology</li>
+              <li>Sensory Evaluation of Foods</li>
+              <li>Food Chemistry I and II</li>
+              <li>Food Engineering I and II</li>
+              <li>Food Processing I and II</li>
+              <li>Methods of Food Research</li>
+              <li>Product Development</li>
+              <li>Food Packaging and Shelf-life Evaluation</li>
+              <li>Food Laws and Regulation</li>
+              <li>Food Safety</li>
+              <li>Quality Assurance</li>
+              <li>Processing of Fruits and Vegetables</li>
+              <li>Principles and Practice in Food Processing Management</li>
+              <li>
+                Principles and Practice in Food Processing Waste Management
+              </li>
+              <li>Plant Practice</li>
+              <li>Undergraduate Thesis</li>
+            </ul>
+            <p>LEGISLATED COURSE</p>
+            <ul>
+              <li>PI 100, Life and works of Jose Rizal</li>
+            </ul>
+            <p>GENERAL COURSES</p>
+            <p>Required:</p>
+            <ul>
+              <li>Math, Culture and Society (MATH 10)</li>
+              <li>Critical Perspectives in the Arts (ARTS 1)</li>
+              <li>Mindanao Studies (MinStud 1)</li>
+              <li>Ethics and Moral Reasoning in Everyday Life(Ethics 1)</li>
+              <li>Science, Technology and Society (STS 1)</li>
+              <li>Kasaysayan ng Pilipinas (KAS 1)</li>
+            </ul>
+          </div>
+          <h3>BS COMPUTER SCIENCE</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              The program was instituted in UP Mindanao in 1998 in response to
+              the increasing demand for highly skilled and capable IT
+              professionals in the region. This program aims to produce
+              graduates who are prepared for research and instruction activities
+              related to the discipline and advanced studies in CS and trained
+              to develop software systems.
+            </p>
+            <p>COURSE PROSPECTUS</p>
+            <p>SUBJECTS</p>
+            <p>COMPUTER SCIENCE</p>
+            <ul>
+              <li>Intro to Computer Science</li>
+              <li>Discrete Mathematical Structures in Comp. Science</li>
+              <li>Fundamentals of Programming</li>
+              <li>Discrete Mathematical Structures in Comp. Sci. II</li>
+              <li>Data Structures</li>
+              <li>Logic Design and Digital Computer Circuits</li>
+              <li>Design and Implementation of Programming</li>
+              <li>Languages</li>
+              <li>File Processing and Database Systems</li>
+              <li>Intro to Computer Org. and Machine Level</li>
+              <li>Programming</li>
+              <li>Numerical & Symbolic Computation</li>
+              <li>Operating Systems</li>
+              <li>Intro to Software Engineering</li>
+              <li>Computer Architecture</li>
+              <li>Data Communications and Networking</li>
+              <li>Automata and Languages Theory</li>
+              <li>Design and Analysis of Algorithms</li>
+              <li>Undergraduate Seminar</li>
+              <li>Undergraduate Thesis I & II</li>
+            </ul>
+            <p>MATH AND PHYSICS SUBJECTS</p>
+            <ul>
+              <li>College Algebra & Trigo.</li>
+              <li>Calculus & Analytic Geo.</li>
+              <li>Calculus & Analytical Geo. II</li>
+              <li>General Physics I</li>
+              <li>Elementary Statistics</li>
+              <li>Calculus & Analytic Geo. III</li>
+              <li>General Physics</li>
+              <li>Statistical Methods</li>
+            </ul>
+            <p>LEGISLATED COURSES</p>
+            <ul>
+              <li>PI 100, Life and Works of Jose Rizal</li>
+            </ul>
+            <p>REVISED GENERAL EDUCATION COURSES</p>
+            <ul>
+              <li>AH1, Dimensions of Identity: Understanding</li>
+              <li>Ourselves Through Reading and Writing</li>
+              <li>AH2, Exploring Ideas Through Academic Writing</li>
+              <li>AH 3, Effective Speech Communication</li>
+              <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
+              <li>AH 5, Art and Society</li>
+              <li>AH 6, Visual Communication and Society</li>
+              <li>AH 7, Significant Themes in Literature and Films</li>
+              <li>SSP 1, Philippine History</li>
+              <li>SSP 2, Asia & The World</li>
+              <li>SSP 3, Foundations of Behavioral Science</li>
+              <li>SSP 4, Social, Eco & Political Thought</li>
+              <li>SSP 5, Philosophical Analysis</li>
+              <li>SSP 6, Wika at Pagka-Pilipino</li>
+              <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
+              <li>MST 1, Foundation of Natural Sciences I</li>
+              <li>MST 2, Foundation of Natural Sciences II</li>
+              <li>MST 3, Mathematics for General Education</li>
+              <li>MST 4, Science, Technology and Society</li>
+              <li>MST 5, Biotechnology and Society</li>
+              <li>MST 6, Biodiversity Challenge</li>
+            </ul>
+          </div>
+          <h3>BS BIOLOGY</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              The Department of Biological Sciences and Environmental Studies
+              (BSES) offers a 4-year BS Biology degree program with two major
+              fields of specialization to choose from, Ecology and Cell Biology.
+              Areas of study in Ecology include life forms in terrestrial and
+              aquatic ecosystems. The Cell Biology division has recently been
+              expanded to include not only studies of life forms<br /><br />
+              at cellular level, but also molecular studies of plant, animal and
+              microbial life forms The BS Biology curriculum also includes the
+              conduct of an undergraduate thesis which provides the students the
+              opportunity to perform research work along their chosen field of
+              specialization under the guidance of their selected faculty
+              adviser.
+            </p>
+            <p>COURSE PROSPECTUS</p>
+            <p>SUBJECTS</p>
+            <p>BIOLOGY SUBJECTS</p>
+            <ul>
+              <li>BIO 10, Introduction to Biology</li>
+              <li>BIO 70, Earth’s Processes & Biological Systems</li>
+              <li>BOT 3, Intermediate Botany</li>
+              <li>MCB 1, General Microbiology</li>
+              <li>BIO 150, Principles of Ecology</li>
+              <li>ZOO 3, Intermediate Zoology</li>
+              <li>BIO 30, Genetics</li>
+              <li>BIO 101, Introductory Molecular Biology</li>
+              <li>BIO 120, Cell Biology</li>
+              <li>BIO 140, Evolutionary Biology</li>
+              <li>BIO 199, Undergraduate Seminar</li>
+              <li>BIO 199, Undergraduate Seminar</li>
+            </ul>
+            <p>MATHEMATICS SUBJECTS</p>
+            <ul>
+              <li>MATH 11, College Algebra</li>
+              <li>MATH 14, Plane Trigonometry</li>
+              <li>MATH 26, Analytic Geometry & Calculus I</li>
+              <li>STAT 1, Elementary Statistics</li>
+            </ul>
+            <p>FILIPINO SUBJECTS</p>
+            <ul>
+              <li>FIL 20, Mga Piling Katha ng mga Manunulat na Pilipino</li>
+              <li>FIL 1, Sining ng Pakikipagtalastasan</li>
+            </ul>
+            <p>LEGISLATED COURSES</p>
+            <ul>
+              <li>PI 100, Life and Works of Jose Rizal</li>
+            </ul>
+            <p>REVISED GENERAL EDUCATION COURSES</p>
+            <ul>
+              <li>
+                AH1, Dimensions of Identity: Understanding Ourselves Through
+                Reading and Writing
+              </li>
+              <li>AH2, Exploring Ideas Through Academic Writing</li>
+              <li>AH 3, Effective Speech Communication</li>
+              <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
+              <li>AH 5, Art and Society</li>
+              <li>AH 6, Visual Communication and Society</li>
+              <li>AH 7, Significant Themes in Literature and Films</li>
+              <li>SSP 1, Philippine History</li>
+              <li>SSP 2, Asia & The World</li>
+              <li>SSP 3, Foundations of Behavioral Science</li>
+              <li>SSP 4, Social, Eco & Political Thought</li>
+              <li>SSP 5, Philosophical Analysis</li>
+              <li>SSP 6, Wika at Pagka-Pilipino</li>
+              <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
+              <li>MST 1, Foundation of Natural Sciences I</li>
+              <li>MST 2, Foundation of Natural Sciences II</li>
+              <li>MST 3, Mathematics for General Education</li>
+              <li>MST 4, Science, Technology and Society</li>
+              <li>MST 5, Biotechnology and Society</li>
+              <li>MST 6, Biodiversity Challenge</li>
+            </ul>
+          </div>
+          <h3>BS APPLIED MATHEMATICS</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              The BS Applied Mathematics program is designed to prepare the
+              students to work in industry, commerce, banks, the public sector
+              and the academe. The students have also the opportunity to develop
+              their written and oral communication skills, interpersonal
+              relationships, and teaching abilities. The goal of this program is
+              to produce dynamic, adaptive, highly competent graduates with
+              strong mathematical and computational skills, and research
+              capabilities. Graduates in this program are expected to be highly
+              knowledgeable in applying the appropriate mathematical techniques
+              in their areas of application, particularly in data analysis,
+              modeling and optimization.
+            </p>
+            <p>MATHEMATICS SUBJECT</p>
+            <ul>
+              <li>Finite Mathematics</li>
+              <li>Algebra and Trigonometry</li>
+              <li>Mathematical Analysis I, II and III</li>
+              <li>Elementary Statistics</li>
+              <li>Computer Programming</li>
+              <li>Mathematical Modeling</li>
+              <li>Logic and Set Theory</li>
+              <li>Linear Algebra</li>
+              <li>Introductory Combinatorics</li>
+              <li>Numerical Analysis I and II</li>
+              <li>Introduction to Probability Theory</li>
+              <li>Statistical Methods</li>
+              <li>Introduction to Mathematical Decision Theory</li>
+              <li>Linear Programming</li>
+              <li>Mathematical Models in Operations</li>
+              <li>Research I</li>
+              <li>Ordinary Differential Equations</li>
+              <li>Non-Linear Programming</li>
+              <li>Integer and Dynamic Programming</li>
+              <li>Modern Algebra I</li>
+              <li>Advanced Calculus I</li>
+            </ul>
+            <p>FILIPINO SUBJECTS</p>
+            <ul>
+              <li>FIL 20, Mga Piling Katha ng mga Manunulat na Pilipino</li>
+              <li>FIL 1, Sining ng Pakikipagtalastasan</li>
+            </ul>
+            <p>LEGISLATED COURSES</p>
+            <ul>
+              <li>PI 100, Life and Works of Jose Rizal</li>
+            </ul>
+            <p>REVISED GENERAL EDUCATION COURSES</p>
+            <ul>
+              <li>AH1, Dimensions of Identity: Understanding</li>
+              <li>Ourselves Through Reading and Writing</li>
+              <li>AH2, Exploring Ideas Through Academic Writing</li>
+              <li>AH 3, Effective Speech Communication</li>
+              <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
+              <li>AH 5, Art and Society</li>
+              <li>AH 6, Visual Communication and Society</li>
+              <li>AH 7, Significant Themes in Literature and Films</li>
+              <li>SSP 1, Philippine History</li>
+              <li>SSP 2, Asia & the World</li>
+              <li>SSP 3, Foundations of Behavioral Science</li>
+              <li>SSP 4, Social, Eco & Political Thought</li>
+              <li>SSP 5, Philosophical Analysis</li>
+              <li>SSP 6, Wika at Pagka-Pilipino</li>
+              <li>SSP 7, The Hitchiker’s Guide to Mindanao</li>
+              <li>MST 1, Foundation of Natural Sciences I</li>
+              <li>MST 2, Foundation of Natural Sciences II</li>
+              <li>MST 3, Mathematics for General Education</li>
+              <li>MST 4, Science, Technology and Society</li>
+              <li>MST 5, Biotechnology and Society</li>
+              <li>MST 6, Biodivesity Challenge</li>
+            </ul>
+          </div>
+          <h3>BA ENGLISH</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              The BA English program trains students to become critical and
+              creative thinkers who are skilled not just in the production of
+              creative works but also in the practice of the English language in
+              the global setting.<br /><br />BA English graduates now work as
+              lawyers, business process outsourcing specialists, medical
+              transcribers, information officers, public relations writers,
+              copywriters, teachers, scriptwriters, technical writers,
+              journalists, marketing communication specialists, and authors or
+              editors of books and magazines.
+            </p>
+            <p>COURSE PROSPECTUS</p>
+            <p>CORE SUBJECTS</p>
+            <ul>
+              <li>FOREIGN LANGUAGE I, II, III, IV</li>
+              <li>Critical Approach to Literature I and II</li>
+              <li>Survey of English Literature I and II</li>
+              <li>Survey of American Literature I and II</li>
+              <li>Introduction to Shakespeare</li>
+              <li>Introduction to Creative Writing</li>
+              <li>Study of the English Language</li>
+              <li>The Literature of the Philipines in English I and II</li>
+              <li>Literary Translation</li>
+              <li>Philippine Regional Literature in English Translation</li>
+            </ul>
+            <p>LEGISLATED COURSES</p>
+            <ul>
+              <li>PI 100, Life and Works of Jose Rizal</li>
+            </ul>
+            <p>REVISED GENERAL EDUCATION COURSES</p>
+            <ul>
+              <li>
+                AH 1, Dimensions of Identity: Understanding Ourselves Through
+                Reading and Writing
+              </li>
+              <li>AH 2, Exploring Ideas Through Academic Writing</li>
+              <li>AH 3, Effective Speech Communication</li>
+              <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
+              <li>AH 5, Art and Society</li>
+              <li>AH 6, Visual Communication and Society</li>
+              <li>AH 7, Significant Themes in Literature and Films</li>
+              <li>SSP 1, Philippine History</li>
+              <li>SSP 2, Asia & The World</li>
+              <li>SSP 3, Foundations of Behavioral Science</li>
+              <li>SSP 4, Social, Economic & Political Thought</li>
+              <li>SSP 5, Philosophical Analysis</li>
+              <li>SSP 6, Wika at Pagka-Pilipino</li>
+              <li>SSP 7, The Hitchhiker's Guide to Mindanao</li>
+              <li>MST 1, Foundation of Natural Sciences I</li>
+              <li>MST 2, Foundation of Natural Sciences II</li>
+              <li>MST 3, Mathematics for General Education</li>
+              <li>MST 4, Science, Technology and Society</li>
+              <li>MST 5, Biotechnology and Society</li>
+              <li>MST 6, Biodiversity Challenge</li>
+            </ul>
+          </div>
+          <h3>BA COMMUNICATION AND MEDIA ARTS</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              The BA Communication and Media Arts program trains students to be
+              effective and savvy communication and media specialists who are
+              able to critically, creatively, and imaginatively use their skills
+              in the incisive analysis of social and cultural realities. BA
+              Communication and Media Arts graduates are employed as corporate
+              communication executives, media production staff, public relations
+              officers, business process outsourcing specialists, theater
+              artists, video production staff, advertising executives, web
+              designers, teachers, communications and market researchers, speech
+              writers, and print and broadcast journalists.
+            </p>
+            <p>SUBJECTS</p>
+            <p>CORE SUBJECTS</p>
+            <ul>
+              <li>Introduction to Communication Theories</li>
+              <li>The Structure and Function of Language</li>
+              <li>Language and Culture</li>
+              <li>Design Fundamentals</li>
+              <li>Principles of Public Relations and Advertising</li>
+              <li>Ethics in Organizational Communication</li>
+              <li>Prose Style</li>
+              <li>Aesthetics</li>
+              <li>Research Principles and Methods in Communication Arts</li>
+            </ul>
+            <p>MEDIA ARTS MAJOR SUBJECTS</p>
+            <ul>
+              <li>Media: History, Development and Theories</li>
+              <li>Photography: Theory and Practice</li>
+              <li>New Media in Communication</li>
+              <li>Writing for Print Media, Radio and Television</li>
+              <li>Print Media Production</li>
+              <li>Audio Production</li>
+              <li>Television / Video Production</li>
+            </ul>
+            <p>SPEECH COMMUNICATION MAJOR SUBJECTS</p>
+            <ul>
+              <li>Rhetoric</li>
+              <li>Voice and Diction</li>
+              <li>Oral Interpretation</li>
+              <li>Occasional Speeches</li>
+              <li>Philippine Public Address</li>
+              <li>Group Discussion and Leadership</li>
+              <li>Communication in Public Relations</li>
+              <li>Organizational Communication</li>
+              <li>Business and Corporate Communication</li>
+              <li>Crisis Communication</li>
+              <li>Communication Planning</li>
+              <li>Intercultural Communication</li>
+            </ul>
+            <p>REVISED GENERAL EDUCATION COURSES</p>
+            <ul>
+              <li>
+                AH 1, Dimensions of Identity: Understanding Ourselves Through
+                Reading and Writing
+              </li>
+              <li>AH 2, Exploring Ideas Through Academic Writing</li>
+              <li>AH 3, Effective Speech Communication</li>
+              <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
+              <li>AH 5, Art and Society</li>
+              <li>AH 6, Visual Communication and Society</li>
+              <li>AH 7, Significant Themes in Literature and Films</li>
+              <li>SSP 1, Philippine History</li>
+              <li>SSP 2, Asia & The World</li>
+              <li>SSP 3, Foundations of Behavioral Science</li>
+              <li>SSP 4, Social, Economic & Political Thought</li>
+              <li>SSP 5, Philosophical Analysis</li>
+              <li>SSP 6, Wika at Pagka-Pilipino</li>
+              <li>SSP 7, The Hitchiker’s Guide to Mindanao</li>
+              <li>MST 1, Foundation of Natural Sciences I</li>
+              <li>MST 2, Foundation of Natural Sciences II</li>
+              <li>MST 3, Mathematics for General Education</li>
+              <li>MST 4, Science, Technology and Society</li>
+              <li>MST 5, Biotechnology and Society</li>
+              <li>MST 6, Biodiversity Challenge</li>
+            </ul>
+          </div>
+          <h3>BS ARCHITECTURE</h3>
+          <div>
+            <p>PROGRAM PROFILE</p>
+            <p>
+              The BS Architecture program trains students to be professional
+              architects with a high sense of social and cultural awareness that
+              is the result of five years of study in construction and building
+              technology, architectural history and critical theory, and urban
+              and regional planning.<br /><br />BS Architecture graduates now
+              work as professional design architects, heritage
+              planners/conservators, museum curators, architectural critics,
+              architectural photographers, renderers, AutoCAD specialists,
+              cartographers, building development scientists, corporate
+              consultants, environmental planners, and real estate project
+              managers.
+            </p>
+            <p>COURSE PROSPECTUS</p>
+            <p>CORE SUBJECTS</p>
+            <ul>
+              <li>Architectural Drafting</li>
+              <li>Monochromatic Drawing</li>
+              <li>Architectural Design I - X</li>
+              <li>Color Rendering</li>
+              <li>Perspectives, Shades and Shadows</li>
+              <li>History of Architecture I and II</li>
+              <li>Presentation Techniques I and II</li>
+              <li>Materials of Building Technology</li>
+              <li>Building Utilities</li>
+              <li>Building Construction I - III</li>
+              <li>Mechanics of Architectural Structures I and II</li>
+              <li>Building Laws</li>
+              <li>Plumbing and Sanitary Services</li>
+              <li>Research Methods in Architecture</li>
+              <li>Elementary Surveying</li>
+              <li>Mechanical and Electrical Systems</li>
+              <li>Site Planning and Landscape Structure</li>
+              <li>Structure Design I - III</li>
+              <li>Comprehensive Services of the Architect</li>
+              <li>Socio-Cultural and Institutional Aspects of Housing</li>
+              <li>Finance, Taxation, Civics and Land Reform for Architects</li>
+            </ul>
+            <p>REVISED GENERAL EDUCATION COURSES</p>
+            <ul>
+              <li>
+                AH 1, Dimensions of Identity: Understanding Ourselves Through
+                Reading and Writing
+              </li>
+              <li>AH 2, Exploring Ideas Through Academic Writing</li>
+              <li>AH 3, Effective Speech Communication</li>
+              <li>AH 4, Adventures in Fiction, Poetry & Drama</li>
+              <li>AH 5, Art and Society</li>
+              <li>AH 6, Visual Communication and Society</li>
+              <li>AH 7, Significant Themes in Literature and Films</li>
+              <li>SSP 1, Philippine History</li>
+              <li>SSP 2, Asia & The World</li>
+              <li>SSP 3, Foundations of Behavioral Science</li>
+              <li>SSP 4, Social, Economic & Political Thought</li>
+              <li>SSP 5, Philosophical Analysis</li>
+              <li>SSP 6, Wika at Pagka-Pilipino</li>
+              <li>SSP 7, The Hitchiker’s Guide to Mindanao</li>
+              <li>MST 1, Foundation of Natural Sciences I</li>
+              <li>MST 2, Foundation of Natural Sciences II</li>
+              <li>MST 3, Mathematics for General Education</li>
+              <li>MST 4, Science, Technology and Society</li>
+              <li>MST 5, Biotechnology and Society</li>
+              <li>MST 6, Biodiversity Challenge</li>
+            </ul>
+          </div>
+          <h3>MASTER IN MANAGEMENT</h3>
+          <div>
+            <p>
+              Today’s world of work is more complex and volatile than it was
+              years back. Managerial problems, especially those faced by
+              decision-makers at the highest levels of administration, have
+              become less structured than they were in the past. Increasingly,
+              managers have to deal with more sophisticated technologies, more
+              rapidly expanding and contracting markets. In adapting to these
+              changes, organizations have become flatter, smaller and more
+              flexible in structure, more integrative in approach to
+              decision-making, and more global in operation.<br /><br />
+              Given the dynamism of our present work environment, it becomes
+              imperative for organizational leaders to develop the capability to
+              assess a broad spectrum of interrelated issues and to interpret a
+              continuous stream of data that are vital to decision-making.<br /><br />
+              Decision-makers ought to be humanistic because people are the
+              carriers of today’s most important resources (knowledge and
+              information), and holistic because managerial problems and issues
+              are interrelated.
+            </p>
+            <p>
+              The program aims to hone the following managerial skills and
+              competences:
+            </p>
+            <ul>
+              <li>Human skills – ability to lead and motivate</li>
+              <li>
+                Analytical skills – ability to discern relationships, detect
+                dysfunction, identity and evaluate options
+              </li>
+              <li>
+                Integrative skills– ability to perceive the whole picture and
+                latticework of interdependencies
+              </li>
+              <li>
+                Innovativeness – ability to develop approaches in applying new
+                and continually evolving stock of knowledge and information
+              </li>
+              <li>
+                Proactiveness – the ability to anticipate problems and issues to
+                set the tone for change and develop orientation or concern for
+                the enhancement of the human condition in the long run
+              </li>
+            </ul>
+            <h4>ADMISSION REQUIREMENTS</h4>
+            <ol class="1">
+              <li>A bachelor’s degree in any field of study</li>
+              <li>A minimum of 2.5 or equivalent average grade</li>
+              <li>At least 2 years of managerial or supervisory experience</li>
+              <li>
+                A favorable recommendation from a superior and at least one
+                other person who is well acquainted with, but not related to,
+                the applicant
+              </li>
+              <li>Passing the Graduate Admission Test</li>
+              <li>Favorable assessment of interview results</li>
+              <li>Attendance to the Bridging Program</li>
+            </ol>
+            <p>COURSE PROSPECTUS</p>
+            <h5>First Semester (Tool Subjects)</h5>
+            <ul>
+              <li>M206 Organizational Analysis</li>
+              <li>M209 Systems Approach to Strategic Planning</li>
+              <li>
+                M210 Methods Approach for Business and Management Research
+              </li>
+            </ul>
+            <h5>Second Semester (Functional Subjects)</h5>
+            <ul>
+              <li>M211 Marketing Management</li>
+              <li>M212 Financial Management</li>
+              <li>
+                M216 Human Resource Management and Industrial Relations Systems
+              </li>
+            </ul>
+            <h5>Third Semester (Integrative Block)</h5>
+            <ul>
+              <li>M217 Operations and Production Management</li>
+              <li>MGT213 Management Accounting and Control</li>
+              <li>M224 Managerial Economics</li>
+            </ul>
+            <h5>Fourth Semester</h5>
+            <ul>
+              <li>Elective</li>
+              <li>Elective</li>
+              <li>M241 Policy and Strategic Planning</li>
+            </ul>
+            <h4>ELECTIVES</h4>
+            <ul>
+              <li>ABM230 Agribusiness Systems</li>
+              <li>ABM234 Special Topics in Agribusiness Management</li>
+              <li>DM232 Community Management</li>
+              <li>DM233 Local Governance</li>
+              <li>IR204 Labor and National Economy</li>
+              <li>IR211 Collective Bargaining and Industrial Democracy</li>
+              <li>M201 Deterministic and Probabilistic Models of Choice</li>
+              <li>M205 Management Communication and Information</li>
+              <li>
+                M234b Special Topics in Management: Value Chain Management
+              </li>
+              <li>M235 Managing a Sustainable Enterprise</li>
+            </ul>
+          </div>
+          <h3>DIPLOMA/MASTER OF ARTS IN URBAN AND REGIONAL PLANNING</h3>
+          <div>
+            <p>CURRICULUM</p>
+            <p>All courses equivalent to 3 units except where indicated</p>
+            <p>Courses for Diploma in Urban and Regional Planning (DURP)</p>
+            <ul>
+              <li>P201 Theory and Practice of Planning</li>
+              <li>P203 Land Use Planning</li>
+              <li>P205 Project Planning and Development</li>
+              <li>P210 Planning Process</li>
+              <li>P210.1 Planning Workshop 5 units</li>
+              <li>P214 Planning Analysis and Techniques</li>
+              <li>P231 Site Planning</li>
+              <li>P299 Research Method</li>
+            </ul>
+            <p>TOTAL NO. OF UNITS DURP 26 UNITS</p>
+            <p>
+              Additional courses for degree in Master of Arts in Urban and
+              Regional Planning (MAURP)
+            </p>
+            <ul>
+              <li>P229 Special Problems in Regional Planning</li>
+              <li>P300 Master's Thesis 6 units</li>
+            </ul>
+            <p>TOTAL NO. OF UNITS MAURP 35 UNITS</p>
+          </div>
+          <h3>DIPLOMA IN EXERCISE AND SPORTS SCIENCE</h3>
+          <div>
+            <p>CURRICULUM</p>
+            <p>All courses equivalent to 3 units</p>
+            <p>1st Year 1st Semester</p>
+            <ul>
+              <li>SS 102: Human Anatomy and Physiology I</li>
+              <li>PEd 93: Philosophy of Sports and Physical Education</li>
+              <li>PEd/SS Elective: (SS 191 Principles of Coaching)</li>
+            </ul>
+            <p>1st Year 2nd Semester</p>
+            <ul>
+              <li>SS 130: First Aid</li>
+              <li>SS 103: Human Anatomy and Physiology 2</li>
+              <li>
+                PEd/SS Elective: (PEd 94 Administration and Supervision of
+                Physical Education)
+              </li>
+              <li>
+                PEd/SS Elective: (SS 104 Tests and Measurements in Human
+                Movements)
+              </li>
+            </ul>
+            <p>2nd Year 1st Semester</p>
+            <ul>
+              <li>SS 140: Exercise Physiology I</li>
+              <li>SS 150: Acquisition of Motor Skills</li>
+              <li>
+                PEd/SS Elective: (PEd 190 Management of Sports and
+                Recreation-related Services)
+              </li>
+            </ul>
+            <p>2nd Year 2nd Semester</p>
+            <ul>
+              <li>PEd/SS Elective: PEd 196 CSS Internship</li>
+              <li>PEd/SS Elective: PEd 92 Philippine Games</li>
+              <li>PEd/SS elective: SS 161 Psychology in Sports</li>
+            </ul>
+          </div>
+          <h3>MS FOOD SCIENCE</h3>
+          <div>
+            <h4>Background</h4>
+            <p>
+              As UP Mindanao is envisioned to grow into a comprehensive
+              University, its academic programs shall put emphasis on science,
+              technology, agriculture, agriculture and medicine so that it can
+              assist the region in the process of nation building.<br /><br />As
+              new global issues emerge, the food industry is beset with concerns
+              in waste reduction, food safety, food security, development of new
+              products and the like. The University believes that the MS Food
+              Science program can assist in building up human resource who are
+              equipped to find solutions to these problems. The Master’s Program
+              is responsive to the needs of the food industry and the academe.
+            </p>
+            <h4>Objectives</h4>
+            <p>
+              The MS Food Science is intended for food entrepreneurs, personnel
+              of government agencies involved in food industries, policy makers,
+              the academe and research institutions. It aims to:
+            </p>
+            <ul>
+              <li>
+                Train manpower than can lead in value added industries, research
+                & development and manufacturing in Mindanao;
+              </li>
+              <li>
+                Provide technical services to food processors & farmers actively
+                involved in food production; and
+              </li>
+              <li>
+                Develop faculty of institutions in the area who are offering the
+                undergraduate course in Food Technology.
+              </li>
+              <ul>
+                <li>
+                  Cover letter addressed to the Dean, signifying intent to apply
+                  and the degree sought
+                </li>
+                <li>
+                  Original or Certified Copy of Official Transcript of Records
+                </li>
+                <li>
+                  Two sealed letters of recommendation (GS-Form 2) from former
+                  professors, supervisors or colleagues
+                </li>
+                <li>
+                  For foreign applicants: Certification of medium of instruction
+                  (in previous degree) by the University Registrar or results of
+                  TOEFL (min score: 600) or IELTS (min score: 6.5)
+                </li>
+                <li>
+                  Non-refundable application fee (Php 200.00 for Filipino
+                  applicants and US$25.00 for foreign applicants)
+                </li>
+              </ul>
+            </ul>
+            <h4>Admission Requirements</h4>
+            <p>
+              Applicants for admission must be holders of a bachelor’s degree in
+              Food Science and Technology or related disciplines with a general
+              weighted average of 2.50 or better.<br /><br />
+              A duly accomplished Application form (GS Form -1) must be
+              submitted with the following documents:<br /><br />
+              Note: A student with inadequate background in food science will be
+              required to take additional courses without credit.
+            </p>
+            <h4>Curriculum</h4>
+            <ul>
+              <li>Core Courses (TOTAL = 19 units)</li>
+              <ul>
+                <li>FST 202 Food Analysis (3 units)</li>
+                <li>FST 210 Food Biochemistry (3 units)</li>
+                <li>FST 221 Advanced Food Microbiology (3 units)</li>
+                <li>FST 235 Thermal Processing (3 units)</li>
+                <li>FST 299 Graduate Seminar (1 unit)</li>
+                <li>FST 300 Master’s Thesis (6 units)</li>
+              </ul>
+              <li>Other Major Courses (3 units)</li>
+              <ul>
+                <li>FST 219 Postharvest Biochemistry of Fruits & Vegetables</li>
+                <li>FST 220 Microbial Aspects of Food Processing</li>
+                <li>FST 236 Dehydration and Freezing</li>
+                <li>FST 240 Tropical Food Processing</li>
+                <li>FST 241 Tropical Fruits & Vegetables Processing</li>
+                <li>FST 290 Special Problems</li>
+                <li>FST 291 Special Topics</li>
+              </ul>
+              <li>Minor subjects (9 units)</li>
+              <ul>
+                <li>
+                  200-level or at most 100-level Courses from another college
+                  offering graduate programs
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <h3>PhD BY RESEARCH</h3>
+          <div>
+            <p>
+              The PhD by Research program aims to produce graduates who have
+              contributed to the body of knowledge in specific fields of study
+              or to have provided innovative, theory-based, systematic, and
+              practical solutions to the significant concerns of specific
+              industries.Graduates will have advanced systematic knowledge and
+              skills applied in a highly specialized or complex
+              multidisciplinary field of professional work, research, and/or
+              further study that require management expertise, innovation, and
+              leadership. Graduates will demonstrate an in-depth understanding
+              of theories and concepts necessary to advance learning and/or
+              professional practice as well as to practice research skills
+              providing a critical perspective of the real-world complex issues
+              related to a specific field of study.<br /><br />The PhD by
+              Research program aims to hone further the research skill of the
+              candidate, acquired mostly through experience under the
+              professional guidance of specialist(s) in his/her particular area
+              of specialization. The program allows the candidate to earn the
+              degree through submission, and the successful defense of a
+              dissertation, without the usual academic course requirements. The
+              program requires the candidate to devote almost his/her entire
+              residency to research.
+            </p>
+            <h4>Admission Requirements</h4>
+            <ol class="1">
+              <li>
+                An applicant for admission to graduate work for the degree of
+                Doctor of Philosophy (PhD) by Research must:
+              </li>
+              <ul>
+                <li>
+                  Be a holder of a Master of Science (MS) degree from a
+                  recognized institution in the same area admission to the PhD
+                  degree is applied for;
+                </li>
+                <li>
+                  Have a grade point average of 1.75 or better in the MS degree
+                  program;
+                </li>
+                <li>
+                  Have at least 3 years’ experience in research beyond the MS
+                  degree; and
+                </li>
+                <li>
+                  Have been sole or senior/lead author of at least one published
+                  paper in the intended area of specialization (excluding the MS
+                  and BS theses) in reputable refereed journals.
+                </li>
+              </ul>
+              <li>
+                A duly accomplished application form must be submitted with the
+                following documents:
+              </li>
+              <ul>
+                <li>
+                  Original and photocopy of the Official Transcript of Records,
+                  in English language, with no remarks and with an explanation
+                  of the grading system used, from all tertiary and graduate
+                  institutions attended;
+                </li>
+                <li>Photocopy of BS and MS diplomas;</li>
+                <li>
+                  Certification from the immediate head of the agency that the
+                  applicant has at least 3 years of satisfactory research
+                  experience;
+                </li>
+                <li>
+                  Reprints or copies of the applicant’s publications (at least
+                  one from reputable journals) wherein the applicant is the sole
+                  or senior author;
+                </li>
+                <li>
+                  Capsule research proposal not exceeding five pages which shall
+                  include the title, rationale, objectives, methodology, and
+                  references;
+                </li>
+                <li>
+                  For international students, certification from the office of
+                  the University Registrar of Previous University attended that
+                  the medium of instruction is English (if applicable), or
+                  results of Test of English as a Foreign Language (TOEFL) or
+                  results of the international English Language Testing System
+                  (IELTS), or its equivalent;
+                </li>
+                <li>
+                  Application fee (may be paid by bank transfer or in cash); and
+                </li>
+                <li>
+                  Sealed letters of references from two former professors,
+                  superiors or colleagues, and a letter of reference from the
+                  applicant’s former Master’s Degree Adviser.
+                </li>
+              </ul>
+            </ol>
+            <h4>
+              Submission of application for First Semester AY2022-2023 is 30
+              June 2022. (Please email complete documents at
+              somcs.upmindanao@up.edu.ph)
+            </h4>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,15 +1,36 @@
-#accordion {
-    width: 75%;
+*{
+    font-family: 'Montserrat' !important;
+}
+
+#programs {
+    width: 80%;
     margin: 50px auto;
 }
 
 h2 {
-    font-family: 'Montserrat';
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: var(--main-color-text);
+
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: clamp(24px, 3vw, 36px);
+    margin :0;
 }
 
-p, h3, h4, h5 {
-    font-family: 'Montserrat';    
+h3{
+    line-height: 30px;
+}
+
+p{
+    color: var(--grey-text);
+    text-align: revert;
+    font-weight: 400;
+    font-size: clamp(12px, 3vw, 16px);
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.ui-state-active {
+    background: var(--color-2);
+    border: none;
+    color: white;
 }

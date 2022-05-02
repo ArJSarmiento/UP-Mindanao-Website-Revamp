@@ -2,7 +2,7 @@
     --main-bg-color: rgb(121, 35, 36, 95%);
     --color-2: #FF6551;
     --main-color-text: rgb(142, 23, 26) ;
-    --grey-text: #909090;
+    --grey-text: #4e4747;
 }
 
 html,
@@ -97,4 +97,8 @@ header h1 {
     border-radius: 5px;
 
     gap: 10px;
+}
+
+.link:hover{
+    color: var(--color-2);
 }

@@ -68,8 +68,8 @@
 .contacts p, .contacts h3{
     text-align: left;
     margin: 0 !important;
-    
-line-height: 30px;}
+    line-height: 30px;
+}
 
 .contacts h1{
     margin-bottom: 5vh;

@@ -1,3 +1,9 @@
+
+.acad_unit > *{
+    font-family: 'Montserrat' !important;
+    color: var(--grey-text) !important;
+}
+
 .sub {
     margin: 0;
     padding: 0;
@@ -6,7 +12,7 @@
     text-align: center;
     width: 5% !important;
     cursor: pointer;
-    font-family: 'Montserrat';
+
 }
 
 .sub1 {
@@ -20,7 +26,7 @@
 
 .label-acad-u {
     text-decoration: none;
-    font-family: 'Montserrat';
+
     font-style: normal;
     font-weight: 700;
     font-size: clamp(8px, 5vw, 14px);
@@ -63,32 +69,15 @@
 .acad_unit h1 {
     justify-content: center;
     display: flex;
-    font-family: 'Montserrat';
     font-size: clamp(18px, 3vw, 22px);
     text-transform: uppercase;
 }
 
-.hss {
+.hss, .csm, .som {
     display: block;
 }
 
-.csm {
-    display: block;
-}
-
-.som {
-    display: block;
-}
-
-.art-hss {
-    margin: 4% 0px 0px 0px;
-}
-
-.art-csm {
-    margin: 4% 0px 0px 0px;
-}
-
-.art-som {
+.art-hss, .art-csm, .art-som {
     margin: 4% 0px 0px 0px;
 }
 
@@ -107,4 +96,11 @@
     color: #282828;
     margin: 3%;
     text-align: justify;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid var(--color-2);
+    background: var(--color-2);
+    font-weight: normal;
+    color: #ffffff;
 }
